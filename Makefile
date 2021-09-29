@@ -25,7 +25,7 @@ lint:	## run pylint linter.
 	pylint ${target_dirs}
 
 system-deps:	## install linux system deps
-	sudo apt-get install -y libsndfile1-dev
+	sudo yum install -y libsndfile1-dev
 
 dev-deps:  ## install development deps
 	pip install -r requirements.dev.txt

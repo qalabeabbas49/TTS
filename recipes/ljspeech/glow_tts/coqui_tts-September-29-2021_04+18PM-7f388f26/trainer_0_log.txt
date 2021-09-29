@@ -1,0 +1,2943 @@
+ > Using CUDA:  True
+ > Number of GPUs:  1
+ > Setting up Audio Processor...
+ | > sample_rate:22050
+ | > resample:False
+ | > num_mels:80
+ | > log_func:np.log10
+ | > min_level_db:-100
+ | > frame_shift_ms:None
+ | > frame_length_ms:None
+ | > ref_level_db:20
+ | > fft_size:1024
+ | > power:1.5
+ | > preemphasis:0.0
+ | > griffin_lim_iters:60
+ | > signal_norm:True
+ | > symmetric_norm:True
+ | > mel_fmin:0
+ | > mel_fmax:None
+ | > spec_gain:20.0
+ | > stft_pad_mode:reflect
+ | > max_norm:4.0
+ | > clip_norm:True
+ | > do_trim_silence:True
+ | > trim_db:45
+ | > do_sound_norm:False
+ | > do_amp_to_db_linear:True
+ | > do_amp_to_db_mel:True
+ | > stats_path:None
+ | > base:10
+ | > hop_length:256
+ | > win_length:1024
+ | > Found 13100 files in /home/centos/qalab_TTS/TTS/recipes/ljspeech/LJSpeech-1.1
+ > Using model: glow_tts
+
+ > Model has 28610065 parameters
+
+[4m[1m > EPOCH: 0/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 16:18:55) [0m
+
+[1m   --> STEP: 0/405 -- GLOBAL_STEP: 0[0m
+     | > current_lr: 0.00000 
+     | > step_time: 1.38520  (1.38518)
+     | > loader_time: 1.49050  (1.49055)
+
+
+[1m   --> STEP: 25/405 -- GLOBAL_STEP: 25[0m
+     | > loss: 3.80950  (3.89043)
+     | > log_mle: 0.74088  (0.73686)
+     | > loss_dur: 3.06863  (3.15357)
+     | > grad_norm: 11.63989  (11.05176)
+     | > current_lr: 0.00000 
+     | > step_time: 0.51920  (0.66094)
+     | > loader_time: 0.00820  (0.01207)
+
+
+[1m   --> STEP: 50/405 -- GLOBAL_STEP: 50[0m
+     | > loss: 3.89187  (3.85276)
+     | > log_mle: 0.73697  (0.73676)
+     | > loss_dur: 3.15489  (3.11600)
+     | > grad_norm: 11.84066  (11.47800)
+     | > current_lr: 0.00001 
+     | > step_time: 0.69830  (0.72556)
+     | > loader_time: 0.01740  (0.01453)
+
+
+[1m   --> STEP: 75/405 -- GLOBAL_STEP: 75[0m
+     | > loss: 3.69299  (3.80747)
+     | > log_mle: 0.73131  (0.73529)
+     | > loss_dur: 2.96167  (3.07219)
+     | > grad_norm: 10.83855  (11.38740)
+     | > current_lr: 0.00002 
+     | > step_time: 0.41820  (0.69215)
+     | > loader_time: 0.01290  (0.01599)
+
+
+[1m   --> STEP: 100/405 -- GLOBAL_STEP: 100[0m
+     | > loss: 3.48389  (3.73883)
+     | > log_mle: 0.71110  (0.73114)
+     | > loss_dur: 2.77278  (3.00769)
+     | > grad_norm: 8.92351  (10.97129)
+     | > current_lr: 0.00002 
+     | > step_time: 0.68980  (0.71509)
+     | > loader_time: 0.00660  (0.01798)
+
+
+[1m   --> STEP: 125/405 -- GLOBAL_STEP: 125[0m
+     | > loss: 3.51696  (3.67450)
+     | > log_mle: 0.67386  (0.72341)
+     | > loss_dur: 2.84310  (2.95109)
+     | > grad_norm: 7.07079  (10.25996)
+     | > current_lr: 0.00003 
+     | > step_time: 0.72720  (0.69426)
+     | > loader_time: 0.02450  (0.19432)
+
+
+[1m   --> STEP: 150/405 -- GLOBAL_STEP: 150[0m
+     | > loss: 3.15230  (3.61223)
+     | > log_mle: 0.60421  (0.70849)
+     | > loss_dur: 2.54810  (2.90374)
+     | > grad_norm: 6.23024  (9.61117)
+     | > current_lr: 0.00003 
+     | > step_time: 0.40110  (0.65470)
+     | > loader_time: 1.28860  (0.57478)
+
+
+[1m   --> STEP: 175/405 -- GLOBAL_STEP: 175[0m
+     | > loss: 2.69179  (3.50119)
+     | > log_mle: 0.53927  (0.68821)
+     | > loss_dur: 2.15251  (2.81298)
+     | > grad_norm: 5.35356  (9.01920)
+     | > current_lr: 0.00004 
+     | > step_time: 0.36310  (0.62025)
+     | > loader_time: 0.00980  (0.90542)
+
+
+[1m   --> STEP: 200/405 -- GLOBAL_STEP: 200[0m
+     | > loss: 2.22669  (3.36146)
+     | > log_mle: 0.48371  (0.66411)
+     | > loss_dur: 1.74298  (2.69735)
+     | > grad_norm: 4.46917  (8.47747)
+     | > current_lr: 0.00005 
+     | > step_time: 0.45410  (0.60501)
+     | > loader_time: 0.69520  (1.19212)
+
+
+[1m   --> STEP: 225/405 -- GLOBAL_STEP: 225[0m
+     | > loss: 1.89285  (3.20731)
+     | > log_mle: 0.42435  (0.63881)
+     | > loss_dur: 1.46850  (2.56850)
+     | > grad_norm: 4.06000  (7.98563)
+     | > current_lr: 0.00005 
+     | > step_time: 0.44220  (0.58503)
+     | > loader_time: 2.07520  (1.45964)
+
+
+[1m   --> STEP: 250/405 -- GLOBAL_STEP: 250[0m
+     | > loss: 1.73203  (3.06028)
+     | > log_mle: 0.37399  (0.61327)
+     | > loss_dur: 1.35804  (2.44701)
+     | > grad_norm: 4.08090  (7.56530)
+     | > current_lr: 0.00006 
+     | > step_time: 0.45540  (0.57035)
+     | > loader_time: 7.65640  (1.69507)
+
+
+[1m   --> STEP: 275/405 -- GLOBAL_STEP: 275[0m
+     | > loss: 1.48977  (2.92405)
+     | > log_mle: 0.32308  (0.58851)
+     | > loss_dur: 1.16669  (2.33554)
+     | > grad_norm: 3.49320  (7.20268)
+     | > current_lr: 0.00007 
+     | > step_time: 0.88720  (0.56475)
+     | > loader_time: 0.02560  (1.87313)
+
+
+[1m   --> STEP: 300/405 -- GLOBAL_STEP: 300[0m
+     | > loss: 1.41358  (2.79897)
+     | > log_mle: 0.30198  (0.56485)
+     | > loss_dur: 1.11160  (2.23412)
+     | > grad_norm: 3.08267  (6.90692)
+     | > current_lr: 0.00007 
+     | > step_time: 0.38900  (0.55441)
+     | > loader_time: 0.01540  (2.04908)
+
+
+[1m   --> STEP: 325/405 -- GLOBAL_STEP: 325[0m
+     | > loss: 1.25970  (2.68329)
+     | > log_mle: 0.26808  (0.54204)
+     | > loss_dur: 0.99162  (2.14125)
+     | > grad_norm: 3.22847  (6.67670)
+     | > current_lr: 0.00008 
+     | > step_time: 0.50680  (0.55040)
+     | > loader_time: 9.56050  (2.21821)
+
+
+[1m   --> STEP: 350/405 -- GLOBAL_STEP: 350[0m
+     | > loss: 1.13221  (2.57451)
+     | > log_mle: 0.23409  (0.52027)
+     | > loss_dur: 0.89812  (2.05424)
+     | > grad_norm: 2.75139  (6.42449)
+     | > current_lr: 0.00008 
+     | > step_time: 0.44540  (0.54152)
+     | > loader_time: 18.64160  (2.39169)
+
+
+[1m   --> STEP: 375/405 -- GLOBAL_STEP: 375[0m
+     | > loss: 1.03278  (2.47238)
+     | > log_mle: 0.19077  (0.49929)
+     | > loss_dur: 0.84201  (1.97310)
+     | > grad_norm: 3.27957  (6.22722)
+     | > current_lr: 0.00009 
+     | > step_time: 0.39990  (0.53504)
+     | > loader_time: 0.00980  (2.52886)
+
+
+[1m   --> STEP: 400/405 -- GLOBAL_STEP: 400[0m
+     | > loss: 0.90438  (2.37551)
+     | > log_mle: 0.17938  (0.47912)
+     | > loss_dur: 0.72500  (1.89639)
+     | > grad_norm: 5.32959  (6.03442)
+     | > current_lr: 0.00010 
+     | > step_time: 0.51470  (0.53235)
+     | > loader_time: 0.01310  (2.63488)
+
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 131
+ | > Max length sequence: 174
+ | > Min length sequence: 20
+ | > Avg length sequence: 100.76335877862596
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > EVALUATION [0m
+
+ | > Synthesizing test sentences.
+
+  [1m--> EVAL PERFORMANCE[0m
+     | > avg_loader_time: 1.25920 [0m(+0.00000)
+     | > avg_loss: 0.92663 [0m(+0.00000)
+     | > avg_log_mle: 0.15371 [0m(+0.00000)
+     | > avg_loss_dur: 0.77292 [0m(+0.00000)
+
+ > BEST MODEL : /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26/best_model_406.pth.tar
+
+[4m[1m > EPOCH: 1/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 16:41:02) [0m
+
+[1m   --> STEP: 19/405 -- GLOBAL_STEP: 425[0m
+     | > loss: 1.00490  (0.98552)
+     | > log_mle: 0.15969  (0.16865)
+     | > loss_dur: 0.84520  (0.81687)
+     | > grad_norm: 2.83151  (3.28195)
+     | > current_lr: 0.00010 
+     | > step_time: 0.47720  (0.59522)
+     | > loader_time: 0.01050  (0.01222)
+
+
+[1m   --> STEP: 44/405 -- GLOBAL_STEP: 450[0m
+     | > loss: 0.82820  (0.92642)
+     | > log_mle: 0.12843  (0.15298)
+     | > loss_dur: 0.69976  (0.77345)
+     | > grad_norm: 3.18465  (2.78976)
+     | > current_lr: 0.00011 
+     | > step_time: 0.71940  (0.64903)
+     | > loader_time: 0.01450  (0.02013)
+
+
+[1m   --> STEP: 69/405 -- GLOBAL_STEP: 475[0m
+     | > loss: 0.82234  (0.88518)
+     | > log_mle: 0.10227  (0.13765)
+     | > loss_dur: 0.72007  (0.74752)
+     | > grad_norm: 2.19982  (3.14332)
+     | > current_lr: 0.00012 
+     | > step_time: 0.57710  (0.64902)
+     | > loader_time: 0.01350  (0.01974)
+
+
+[1m   --> STEP: 94/405 -- GLOBAL_STEP: 500[0m
+     | > loss: 0.71852  (0.85332)
+     | > log_mle: 0.06682  (0.12333)
+     | > loss_dur: 0.65170  (0.72999)
+     | > grad_norm: 2.16073  (3.20254)
+     | > current_lr: 0.00012 
+     | > step_time: 0.99640  (0.66902)
+     | > loader_time: 0.02550  (0.01947)
+
+
+[1m   --> STEP: 119/405 -- GLOBAL_STEP: 525[0m
+     | > loss: 0.68170  (0.82487)
+     | > log_mle: 0.05719  (0.10950)
+     | > loss_dur: 0.62451  (0.71537)
+     | > grad_norm: 3.81688  (3.26065)
+     | > current_lr: 0.00013 
+     | > step_time: 0.76380  (0.70082)
+     | > loader_time: 0.01560  (0.01976)
+
+
+[1m   --> STEP: 144/405 -- GLOBAL_STEP: 550[0m
+     | > loss: 0.65889  (0.80020)
+     | > log_mle: 0.02196  (0.09660)
+     | > loss_dur: 0.63693  (0.70360)
+     | > grad_norm: 3.20531  (3.30022)
+     | > current_lr: 0.00013 
+     | > step_time: 0.95720  (0.72275)
+     | > loader_time: 0.02810  (0.02033)
+
+
+[1m   --> STEP: 169/405 -- GLOBAL_STEP: 575[0m
+     | > loss: 0.61840  (0.77756)
+     | > log_mle: 0.00550  (0.08483)
+     | > loss_dur: 0.61290  (0.69273)
+     | > grad_norm: 3.64118  (3.32379)
+     | > current_lr: 0.00014 
+     | > step_time: 0.56140  (0.75110)
+     | > loader_time: 0.01900  (0.02180)
+
+
+[1m   --> STEP: 194/405 -- GLOBAL_STEP: 600[0m
+     | > loss: 0.60629  (0.76098)
+     | > log_mle: -0.00926  (0.07417)
+     | > loss_dur: 0.61555  (0.68681)
+     | > grad_norm: 1.93498  (3.34247)
+     | > current_lr: 0.00015 
+     | > step_time: 0.73550  (0.75665)
+     | > loader_time: 0.01190  (0.02219)
+
+
+[1m   --> STEP: 219/405 -- GLOBAL_STEP: 625[0m
+     | > loss: 0.60780  (0.74424)
+     | > log_mle: -0.02200  (0.06382)
+     | > loss_dur: 0.62980  (0.68041)
+     | > grad_norm: 3.90838  (3.32924)
+     | > current_lr: 0.00015 
+     | > step_time: 1.49670  (0.79188)
+     | > loader_time: 0.04270  (0.02317)
+
+
+[1m   --> STEP: 244/405 -- GLOBAL_STEP: 650[0m
+     | > loss: 0.66184  (0.73118)
+     | > log_mle: -0.02934  (0.05454)
+     | > loss_dur: 0.69118  (0.67663)
+     | > grad_norm: 2.94251  (3.42661)
+     | > current_lr: 0.00016 
+     | > step_time: 1.05700  (0.81004)
+     | > loader_time: 0.01980  (0.02380)
+
+
+[1m   --> STEP: 269/405 -- GLOBAL_STEP: 675[0m
+     | > loss: 0.55763  (0.71770)
+     | > log_mle: -0.03742  (0.04567)
+     | > loss_dur: 0.59505  (0.67203)
+     | > grad_norm: 1.51944  (3.42988)
+     | > current_lr: 0.00017 
+     | > step_time: 0.88490  (0.83246)
+     | > loader_time: 0.03450  (0.02450)
+
+
+[1m   --> STEP: 294/405 -- GLOBAL_STEP: 700[0m
+     | > loss: 0.58330  (0.70471)
+     | > log_mle: -0.06034  (0.03721)
+     | > loss_dur: 0.64364  (0.66750)
+     | > grad_norm: 2.83495  (3.40868)
+     | > current_lr: 0.00017 
+     | > step_time: 1.47560  (0.85192)
+     | > loader_time: 0.06830  (0.02558)
+
+
+[1m   --> STEP: 319/405 -- GLOBAL_STEP: 725[0m
+     | > loss: 0.56199  (0.69325)
+     | > log_mle: -0.07510  (0.02923)
+     | > loss_dur: 0.63710  (0.66403)
+     | > grad_norm: 4.32240  (3.40308)
+     | > current_lr: 0.00018 
+     | > step_time: 1.27630  (0.86653)
+     | > loader_time: 0.03610  (0.02659)
+
+
+[1m   --> STEP: 344/405 -- GLOBAL_STEP: 750[0m
+     | > loss: 0.64907  (0.68258)
+     | > log_mle: -0.06063  (0.02186)
+     | > loss_dur: 0.70971  (0.66072)
+     | > grad_norm: 5.29369  (3.41084)
+     | > current_lr: 0.00018 
+     | > step_time: 0.75110  (0.86225)
+     | > loader_time: 0.01460  (0.02661)
+
+
+[1m   --> STEP: 369/405 -- GLOBAL_STEP: 775[0m
+     | > loss: 0.52476  (0.67350)
+     | > log_mle: -0.08528  (0.01526)
+     | > loss_dur: 0.61004  (0.65824)
+     | > grad_norm: 4.73312  (3.37247)
+     | > current_lr: 0.00019 
+     | > step_time: 1.18210  (0.88790)
+     | > loader_time: 0.05810  (0.03348)
+
+
+[1m   --> STEP: 394/405 -- GLOBAL_STEP: 800[0m
+     | > loss: 0.48462  (0.66211)
+     | > log_mle: -0.09373  (0.00868)
+     | > loss_dur: 0.57835  (0.65343)
+     | > grad_norm: 2.04799  (3.33047)
+     | > current_lr: 0.00020 
+     | > step_time: 0.68610  (0.89387)
+     | > loader_time: 0.02660  (0.03376)
+
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 131
+ | > Max length sequence: 174
+ | > Min length sequence: 20
+ | > Avg length sequence: 100.76335877862596
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > EVALUATION [0m
+
+ | > Synthesizing test sentences.
+
+  [1m--> EVAL PERFORMANCE[0m
+     | > avg_loader_time:[92m 0.02492 [0m(-1.23428)
+     | > avg_loss:[92m 0.50190 [0m(-0.42473)
+     | > avg_log_mle:[92m -0.10184 [0m(-0.25555)
+     | > avg_loss_dur:[92m 0.60373 [0m(-0.16919)
+
+ > BEST MODEL : /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26/best_model_812.pth.tar
+
+[4m[1m > EPOCH: 2/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 16:47:50) [0m
+
+[1m   --> STEP: 13/405 -- GLOBAL_STEP: 825[0m
+     | > loss: 0.50475  (0.55102)
+     | > log_mle: -0.09110  (-0.07530)
+     | > loss_dur: 0.59584  (0.62632)
+     | > grad_norm: 2.27442  (2.69758)
+     | > current_lr: 0.00020 
+     | > step_time: 0.60110  (0.56976)
+     | > loader_time: 0.01270  (0.01317)
+
+
+[1m   --> STEP: 38/405 -- GLOBAL_STEP: 850[0m
+     | > loss: 0.49944  (0.54108)
+     | > log_mle: -0.08751  (-0.08132)
+     | > loss_dur: 0.58695  (0.62240)
+     | > grad_norm: 3.94513  (2.60881)
+     | > current_lr: 0.00021 
+     | > step_time: 0.50560  (0.60443)
+     | > loader_time: 0.01110  (0.01794)
+
+
+[1m   --> STEP: 63/405 -- GLOBAL_STEP: 875[0m
+     | > loss: 0.50867  (0.53024)
+     | > log_mle: -0.10935  (-0.08733)
+     | > loss_dur: 0.61802  (0.61757)
+     | > grad_norm: 3.77812  (2.76586)
+     | > current_lr: 0.00022 
+     | > step_time: 0.90030  (0.63931)
+     | > loader_time: 0.01050  (0.01830)
+
+
+[1m   --> STEP: 88/405 -- GLOBAL_STEP: 900[0m
+     | > loss: 0.52837  (0.52578)
+     | > log_mle: -0.10168  (-0.09336)
+     | > loss_dur: 0.63006  (0.61915)
+     | > grad_norm: 2.93315  (2.94191)
+     | > current_lr: 0.00022 
+     | > step_time: 0.62420  (0.66162)
+     | > loader_time: 0.01870  (0.02317)
+
+
+[1m   --> STEP: 113/405 -- GLOBAL_STEP: 925[0m
+     | > loss: 0.49874  (0.51932)
+     | > log_mle: -0.10707  (-0.09919)
+     | > loss_dur: 0.60581  (0.61851)
+     | > grad_norm: 2.95064  (2.99353)
+     | > current_lr: 0.00023 
+     | > step_time: 0.71520  (0.67824)
+     | > loader_time: 0.02570  (0.02315)
+
+
+[1m   --> STEP: 138/405 -- GLOBAL_STEP: 950[0m
+     | > loss: 0.50077  (0.51427)
+     | > log_mle: -0.12757  (-0.10447)
+     | > loss_dur: 0.62834  (0.61874)
+     | > grad_norm: 3.76311  (2.98485)
+     | > current_lr: 0.00023 
+     | > step_time: 0.64840  (0.71172)
+     | > loader_time: 0.01460  (0.02300)
+
+
+[1m   --> STEP: 163/405 -- GLOBAL_STEP: 975[0m
+     | > loss: 0.48722  (0.50947)
+     | > log_mle: -0.12357  (-0.10910)
+     | > loss_dur: 0.61079  (0.61856)
+     | > grad_norm: 2.99134  (3.02110)
+     | > current_lr: 0.00024 
+     | > step_time: 0.47100  (0.75436)
+     | > loader_time: 0.01470  (0.02382)
+
+
+[1m   --> STEP: 188/405 -- GLOBAL_STEP: 1000[0m
+     | > loss: 0.47496  (0.50570)
+     | > log_mle: -0.13881  (-0.11308)
+     | > loss_dur: 0.61377  (0.61878)
+     | > grad_norm: 2.57019  (3.02836)
+     | > current_lr: 0.00025 
+     | > step_time: 0.62980  (0.76673)
+     | > loader_time: 0.01380  (0.02439)
+
+
+[1m   --> STEP: 213/405 -- GLOBAL_STEP: 1025[0m
+     | > loss: 0.44858  (0.50338)
+     | > log_mle: -0.15010  (-0.11681)
+     | > loss_dur: 0.59868  (0.62020)
+     | > grad_norm: 2.56606  (3.07904)
+     | > current_lr: 0.00025 
+     | > step_time: 1.17390  (0.79268)
+     | > loader_time: 0.03610  (0.02561)
+
+
+[1m   --> STEP: 238/405 -- GLOBAL_STEP: 1050[0m
+     | > loss: 0.44706  (0.49988)
+     | > log_mle: -0.16594  (-0.12071)
+     | > loss_dur: 0.61300  (0.62059)
+     | > grad_norm: 3.14415  (3.08708)
+     | > current_lr: 0.00026 
+     | > step_time: 1.14080  (0.81197)
+     | > loader_time: 0.02560  (0.02689)
+
+
+[1m   --> STEP: 263/405 -- GLOBAL_STEP: 1075[0m
+     | > loss: 0.45573  (0.49623)
+     | > log_mle: -0.16432  (-0.12450)
+     | > loss_dur: 0.62005  (0.62073)
+     | > grad_norm: 2.92105  (3.10205)
+     | > current_lr: 0.00027 
+     | > step_time: 1.16570  (0.83316)
+     | > loader_time: 0.04990  (0.02806)
+
+
+[1m   --> STEP: 288/405 -- GLOBAL_STEP: 1100[0m
+     | > loss: 0.41612  (0.49280)
+     | > log_mle: -0.17218  (-0.12777)
+     | > loss_dur: 0.58829  (0.62057)
+     | > grad_norm: 3.57908  (3.10605)
+     | > current_lr: 0.00027 
+     | > step_time: 1.05290  (0.85002)
+     | > loader_time: 0.05540  (0.02850)
+
+
+[1m   --> STEP: 313/405 -- GLOBAL_STEP: 1125[0m
+     | > loss: 0.42306  (0.48958)
+     | > log_mle: -0.17249  (-0.13103)
+     | > loss_dur: 0.59555  (0.62061)
+     | > grad_norm: 1.85183  (3.10783)
+     | > current_lr: 0.00028 
+     | > step_time: 1.35540  (0.86480)
+     | > loader_time: 0.02760  (0.02900)
+
+
+[1m   --> STEP: 338/405 -- GLOBAL_STEP: 1150[0m
+     | > loss: 0.45090  (0.48565)
+     | > log_mle: -0.17143  (-0.13428)
+     | > loss_dur: 0.62233  (0.61993)
+     | > grad_norm: 10.74308  (3.10278)
+     | > current_lr: 0.00028 
+     | > step_time: 0.68460  (0.87565)
+     | > loader_time: 0.02250  (0.02970)
+
+
+[1m   --> STEP: 363/405 -- GLOBAL_STEP: 1175[0m
+     | > loss: 0.42703  (0.48237)
+     | > log_mle: -0.17802  (-0.13679)
+     | > loss_dur: 0.60505  (0.61917)
+     | > grad_norm: 1.35772  (3.08631)
+     | > current_lr: 0.00029 
+     | > step_time: 1.33980  (0.89231)
+     | > loader_time: 0.04360  (0.03039)
+
+
+[1m   --> STEP: 388/405 -- GLOBAL_STEP: 1200[0m
+     | > loss: 0.37629  (0.47804)
+     | > log_mle: -0.18787  (-0.13948)
+     | > loss_dur: 0.56416  (0.61753)
+     | > grad_norm: 3.04623  (3.05950)
+     | > current_lr: 0.00030 
+     | > step_time: 1.56090  (0.90426)
+     | > loader_time: 0.08870  (0.03114)
+
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 131
+ | > Max length sequence: 174
+ | > Min length sequence: 20
+ | > Avg length sequence: 100.76335877862596
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > EVALUATION [0m
+
+ | > Synthesizing test sentences.
+
+  [1m--> EVAL PERFORMANCE[0m
+     | > avg_loader_time:[92m 0.01186 [0m(-0.01306)
+     | > avg_loss:[92m 0.45103 [0m(-0.05087)
+     | > avg_log_mle:[92m -0.19690 [0m(-0.09506)
+     | > avg_loss_dur:[91m 0.64793 [0m(+0.04419)
+
+ > BEST MODEL : /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26/best_model_1218.pth.tar
+
+[4m[1m > EPOCH: 3/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 16:54:44) [0m
+
+[1m   --> STEP: 7/405 -- GLOBAL_STEP: 1225[0m
+     | > loss: 0.45402  (0.48026)
+     | > log_mle: -0.17601  (-0.16670)
+     | > loss_dur: 0.63003  (0.64696)
+     | > grad_norm: 3.80354  (2.49091)
+     | > current_lr: 0.00030 
+     | > step_time: 0.79060  (0.75389)
+     | > loader_time: 0.05060  (0.01719)
+
+
+[1m   --> STEP: 32/405 -- GLOBAL_STEP: 1250[0m
+     | > loss: 0.46960  (0.46406)
+     | > log_mle: -0.17047  (-0.16698)
+     | > loss_dur: 0.64006  (0.63105)
+     | > grad_norm: 2.35852  (2.50550)
+     | > current_lr: 0.00031 
+     | > step_time: 0.64690  (0.65972)
+     | > loader_time: 0.01310  (0.02156)
+
+
+[1m   --> STEP: 57/405 -- GLOBAL_STEP: 1275[0m
+     | > loss: 0.40429  (0.45113)
+     | > log_mle: -0.18588  (-0.17155)
+     | > loss_dur: 0.59017  (0.62268)
+     | > grad_norm: 2.16254  (2.62484)
+     | > current_lr: 0.00032 
+     | > step_time: 0.79570  (0.67447)
+     | > loader_time: 0.01390  (0.01940)
+
+
+[1m   --> STEP: 82/405 -- GLOBAL_STEP: 1300[0m
+     | > loss: 0.41410  (0.44179)
+     | > log_mle: -0.19517  (-0.17639)
+     | > loss_dur: 0.60927  (0.61818)
+     | > grad_norm: 1.83169  (2.68537)
+     | > current_lr: 0.00032 
+     | > step_time: 0.95680  (0.71841)
+     | > loader_time: 0.02100  (0.01999)
+
+
+[1m   --> STEP: 107/405 -- GLOBAL_STEP: 1325[0m
+     | > loss: 0.43428  (0.43830)
+     | > log_mle: -0.18555  (-0.17966)
+     | > loss_dur: 0.61983  (0.61796)
+     | > grad_norm: 1.72017  (2.65864)
+     | > current_lr: 0.00033 
+     | > step_time: 0.74390  (0.72920)
+     | > loader_time: 0.02410  (0.02067)
+
+
+[1m   --> STEP: 132/405 -- GLOBAL_STEP: 1350[0m
+     | > loss: 0.39747  (0.43481)
+     | > log_mle: -0.20297  (-0.18370)
+     | > loss_dur: 0.60044  (0.61851)
+     | > grad_norm: 2.71377  (2.76070)
+     | > current_lr: 0.00033 
+     | > step_time: 0.86630  (0.74449)
+     | > loader_time: 0.01980  (0.02161)
+
+
+[1m   --> STEP: 157/405 -- GLOBAL_STEP: 1375[0m
+     | > loss: 0.38906  (0.43025)
+     | > log_mle: -0.20758  (-0.18708)
+     | > loss_dur: 0.59664  (0.61733)
+     | > grad_norm: 2.60406  (2.76200)
+     | > current_lr: 0.00034 
+     | > step_time: 0.68790  (0.75427)
+     | > loader_time: 0.03350  (0.02203)
+
+
+[1m   --> STEP: 182/405 -- GLOBAL_STEP: 1400[0m
+     | > loss: 0.48264  (0.42711)
+     | > log_mle: -0.21691  (-0.18965)
+     | > loss_dur: 0.69955  (0.61676)
+     | > grad_norm: 2.56097  (2.78445)
+     | > current_lr: 0.00035 
+     | > step_time: 1.06470  (0.76922)
+     | > loader_time: 0.01240  (0.02252)
+
+
+[1m   --> STEP: 207/405 -- GLOBAL_STEP: 1425[0m
+     | > loss: 0.41275  (0.42406)
+     | > log_mle: -0.21206  (-0.19297)
+     | > loss_dur: 0.62481  (0.61703)
+     | > grad_norm: 2.80189  (2.81632)
+     | > current_lr: 0.00035 
+     | > step_time: 0.81550  (0.78756)
+     | > loader_time: 0.01820  (0.02310)
+
+
+[1m   --> STEP: 232/405 -- GLOBAL_STEP: 1450[0m
+     | > loss: 0.41198  (0.42168)
+     | > log_mle: -0.22117  (-0.19578)
+     | > loss_dur: 0.63316  (0.61746)
+     | > grad_norm: 2.87062  (2.84930)
+     | > current_lr: 0.00036 
+     | > step_time: 1.16720  (0.80643)
+     | > loader_time: 0.07410  (0.02451)
+
+
+[1m   --> STEP: 257/405 -- GLOBAL_STEP: 1475[0m
+     | > loss: 0.40850  (0.41949)
+     | > log_mle: -0.23155  (-0.19856)
+     | > loss_dur: 0.64005  (0.61804)
+     | > grad_norm: 7.52532  (2.88972)
+     | > current_lr: 0.00037 
+     | > step_time: 1.17170  (0.82384)
+     | > loader_time: 0.04950  (0.02598)
+
+
+[1m   --> STEP: 282/405 -- GLOBAL_STEP: 1500[0m
+     | > loss: 0.41596  (0.41830)
+     | > log_mle: -0.23056  (-0.20080)
+     | > loss_dur: 0.64652  (0.61909)
+     | > grad_norm: 2.58262  (2.91659)
+     | > current_lr: 0.00037 
+     | > step_time: 1.24150  (0.84401)
+     | > loader_time: 0.04160  (0.02681)
+
+
+[1m   --> STEP: 307/405 -- GLOBAL_STEP: 1525[0m
+     | > loss: 0.38213  (0.41624)
+     | > log_mle: -0.21825  (-0.20297)
+     | > loss_dur: 0.60039  (0.61921)
+     | > grad_norm: 2.02926  (2.97702)
+     | > current_lr: 0.00038 
+     | > step_time: 1.42520  (0.86898)
+     | > loader_time: 0.02160  (0.02757)
+
+
+[1m   --> STEP: 332/405 -- GLOBAL_STEP: 1550[0m
+     | > loss: 0.39047  (0.41365)
+     | > log_mle: -0.22577  (-0.20522)
+     | > loss_dur: 0.61624  (0.61887)
+     | > grad_norm: 5.23521  (2.99139)
+     | > current_lr: 0.00038 
+     | > step_time: 1.58950  (0.89329)
+     | > loader_time: 0.03400  (0.02867)
+
+
+[1m   --> STEP: 357/405 -- GLOBAL_STEP: 1575[0m
+     | > loss: 0.43586  (0.41146)
+     | > log_mle: -0.22290  (-0.20700)
+     | > loss_dur: 0.65877  (0.61846)
+     | > grad_norm: 3.04761  (3.00718)
+     | > current_lr: 0.00039 
+     | > step_time: 0.89830  (0.90700)
+     | > loader_time: 0.03710  (0.02944)
+
+
+[1m   --> STEP: 382/405 -- GLOBAL_STEP: 1600[0m
+     | > loss: 0.36954  (0.40828)
+     | > log_mle: -0.22090  (-0.20886)
+     | > loss_dur: 0.59044  (0.61715)
+     | > grad_norm: 4.54948  (2.98680)
+     | > current_lr: 0.00040 
+     | > step_time: 1.16560  (0.91793)
+     | > loader_time: 0.01720  (0.03071)
+
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 131
+ | > Max length sequence: 174
+ | > Min length sequence: 20
+ | > Avg length sequence: 100.76335877862596
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > EVALUATION [0m
+
+ | > Synthesizing test sentences.
+
+  [1m--> EVAL PERFORMANCE[0m
+     | > avg_loader_time:[91m 0.05761 [0m(+0.04575)
+     | > avg_loss:[92m 0.35686 [0m(-0.09417)
+     | > avg_log_mle:[92m -0.25122 [0m(-0.05432)
+     | > avg_loss_dur:[92m 0.60808 [0m(-0.03985)
+
+ > BEST MODEL : /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26/best_model_1624.pth.tar
+
+[4m[1m > EPOCH: 4/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 17:01:48) [0m
+
+[1m   --> STEP: 1/405 -- GLOBAL_STEP: 1625[0m
+     | > loss: 0.44165  (0.44165)
+     | > log_mle: -0.22083  (-0.22083)
+     | > loss_dur: 0.66248  (0.66248)
+     | > grad_norm: 2.58063  (2.58063)
+     | > current_lr: 0.00040 
+     | > step_time: 1.24530  (1.24526)
+     | > loader_time: 0.06340  (0.06341)
+
+
+[1m   --> STEP: 26/405 -- GLOBAL_STEP: 1650[0m
+     | > loss: 0.39268  (0.40033)
+     | > log_mle: -0.22352  (-0.21919)
+     | > loss_dur: 0.61620  (0.61952)
+     | > grad_norm: 2.95610  (2.71423)
+     | > current_lr: 0.00041 
+     | > step_time: 0.72380  (0.64088)
+     | > loader_time: 0.01020  (0.01683)
+
+
+[1m   --> STEP: 51/405 -- GLOBAL_STEP: 1675[0m
+     | > loss: 0.34988  (0.39350)
+     | > log_mle: -0.23432  (-0.22206)
+     | > loss_dur: 0.58420  (0.61556)
+     | > grad_norm: 2.36006  (2.62629)
+     | > current_lr: 0.00042 
+     | > step_time: 0.70340  (0.67042)
+     | > loader_time: 0.01620  (0.01840)
+
+
+[1m   --> STEP: 76/405 -- GLOBAL_STEP: 1700[0m
+     | > loss: 0.32657  (0.38744)
+     | > log_mle: -0.24173  (-0.22723)
+     | > loss_dur: 0.56830  (0.61466)
+     | > grad_norm: 2.81073  (2.78033)
+     | > current_lr: 0.00042 
+     | > step_time: 0.43220  (0.69139)
+     | > loader_time: 0.01190  (0.01836)
+
+
+[1m   --> STEP: 101/405 -- GLOBAL_STEP: 1725[0m
+     | > loss: 0.39050  (0.38292)
+     | > log_mle: -0.24525  (-0.23142)
+     | > loss_dur: 0.63575  (0.61434)
+     | > grad_norm: 3.37453  (2.88263)
+     | > current_lr: 0.00043 
+     | > step_time: 1.06450  (0.70409)
+     | > loader_time: 0.02670  (0.01931)
+
+
+[1m   --> STEP: 126/405 -- GLOBAL_STEP: 1750[0m
+     | > loss: 0.35179  (0.38093)
+     | > log_mle: -0.25290  (-0.23492)
+     | > loss_dur: 0.60469  (0.61584)
+     | > grad_norm: 5.32903  (2.97489)
+     | > current_lr: 0.00043 
+     | > step_time: 1.04650  (0.73610)
+     | > loader_time: 0.02260  (0.02010)
+
+
+[1m   --> STEP: 151/405 -- GLOBAL_STEP: 1775[0m
+     | > loss: 0.36797  (0.37765)
+     | > log_mle: -0.25463  (-0.23801)
+     | > loss_dur: 0.62261  (0.61566)
+     | > grad_norm: 4.57066  (3.00471)
+     | > current_lr: 0.00044 
+     | > step_time: 1.11230  (0.76398)
+     | > loader_time: 0.03880  (0.02125)
+
+
+[1m   --> STEP: 176/405 -- GLOBAL_STEP: 1800[0m
+     | > loss: 0.34935  (0.37353)
+     | > log_mle: -0.25673  (-0.24031)
+     | > loss_dur: 0.60609  (0.61384)
+     | > grad_norm: 3.05437  (3.06423)
+     | > current_lr: 0.00045 
+     | > step_time: 1.44080  (0.78001)
+     | > loader_time: 0.02240  (0.02127)
+
+
+[1m   --> STEP: 201/405 -- GLOBAL_STEP: 1825[0m
+     | > loss: 0.37656  (0.37186)
+     | > log_mle: -0.26105  (-0.24297)
+     | > loss_dur: 0.63761  (0.61482)
+     | > grad_norm: 4.10885  (3.10174)
+     | > current_lr: 0.00045 
+     | > step_time: 0.40870  (0.78797)
+     | > loader_time: 0.04480  (0.02189)
+
+
+[1m   --> STEP: 226/405 -- GLOBAL_STEP: 1850[0m
+     | > loss: 0.31289  (0.37031)
+     | > log_mle: -0.27207  (-0.24527)
+     | > loss_dur: 0.58495  (0.61558)
+     | > grad_norm: 2.62876  (3.10833)
+     | > current_lr: 0.00046 
+     | > step_time: 1.54910  (0.82009)
+     | > loader_time: 0.06420  (0.02305)
+
+
+[1m   --> STEP: 251/405 -- GLOBAL_STEP: 1875[0m
+     | > loss: 0.36170  (0.36854)
+     | > log_mle: -0.27446  (-0.24764)
+     | > loss_dur: 0.63616  (0.61618)
+     | > grad_norm: 3.25739  (3.17224)
+     | > current_lr: 0.00047 
+     | > step_time: 0.40080  (0.84309)
+     | > loader_time: 0.01160  (0.02405)
+
+
+[1m   --> STEP: 276/405 -- GLOBAL_STEP: 1900[0m
+     | > loss: 0.36998  (0.36665)
+     | > log_mle: -0.25747  (-0.24989)
+     | > loss_dur: 0.62744  (0.61653)
+     | > grad_norm: 3.81094  (3.18596)
+     | > current_lr: 0.00047 
+     | > step_time: 1.04700  (0.86689)
+     | > loader_time: 0.03870  (0.02513)
+
+
+[1m   --> STEP: 301/405 -- GLOBAL_STEP: 1925[0m
+     | > loss: 0.35685  (0.36531)
+     | > log_mle: -0.28766  (-0.25159)
+     | > loss_dur: 0.64451  (0.61690)
+     | > grad_norm: 5.46488  (3.20318)
+     | > current_lr: 0.00048 
+     | > step_time: 0.48960  (0.86744)
+     | > loader_time: 0.01340  (0.02486)
+
+
+[1m   --> STEP: 326/405 -- GLOBAL_STEP: 1950[0m
+     | > loss: 0.34090  (0.36347)
+     | > log_mle: -0.27130  (-0.25322)
+     | > loss_dur: 0.61220  (0.61669)
+     | > grad_norm: 1.92131  (3.22318)
+     | > current_lr: 0.00048 
+     | > step_time: 0.56730  (0.88834)
+     | > loader_time: 0.02010  (0.02785)
+
+
+[1m   --> STEP: 351/405 -- GLOBAL_STEP: 1975[0m
+     | > loss: 0.32185  (0.36189)
+     | > log_mle: -0.28991  (-0.25473)
+     | > loss_dur: 0.61175  (0.61662)
+     | > grad_norm: 3.13317  (3.24186)
+     | > current_lr: 0.00049 
+     | > step_time: 0.85310  (0.89040)
+     | > loader_time: 0.01640  (0.02806)
+
+
+[1m   --> STEP: 376/405 -- GLOBAL_STEP: 2000[0m
+     | > loss: 0.29663  (0.35901)
+     | > log_mle: -0.28139  (-0.25629)
+     | > loss_dur: 0.57802  (0.61529)
+     | > grad_norm: 2.35968  (3.25797)
+     | > current_lr: 0.00050 
+     | > step_time: 1.38900  (0.90688)
+     | > loader_time: 0.01830  (0.02871)
+
+
+[1m   --> STEP: 401/405 -- GLOBAL_STEP: 2025[0m
+     | > loss: 0.30430  (0.35572)
+     | > log_mle: -0.26853  (-0.25769)
+     | > loss_dur: 0.57283  (0.61341)
+     | > grad_norm: 2.26519  (3.27057)
+     | > current_lr: 0.00050 
+     | > step_time: 0.37040  (0.91307)
+     | > loader_time: 0.01070  (0.02880)
+
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 131
+ | > Max length sequence: 174
+ | > Min length sequence: 20
+ | > Avg length sequence: 100.76335877862596
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > EVALUATION [0m
+
+ | > Synthesizing test sentences.
+
+  [1m--> EVAL PERFORMANCE[0m
+     | > avg_loader_time:[92m 0.01639 [0m(-0.04122)
+     | > avg_loss:[92m 0.32052 [0m(-0.03634)
+     | > avg_log_mle:[92m -0.29659 [0m(-0.04537)
+     | > avg_loss_dur:[91m 0.61711 [0m(+0.00904)
+
+ > BEST MODEL : /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26/best_model_2030.pth.tar
+
+[4m[1m > EPOCH: 5/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 17:08:40) [0m
+
+[1m   --> STEP: 20/405 -- GLOBAL_STEP: 2050[0m
+     | > loss: 0.35098  (0.37249)
+     | > log_mle: -0.24227  (-0.25368)
+     | > loss_dur: 0.59324  (0.62618)
+     | > grad_norm: 2.22206  (3.01871)
+     | > current_lr: 0.00051 
+     | > step_time: 0.68770  (0.57594)
+     | > loader_time: 0.01200  (0.01353)
+
+
+[1m   --> STEP: 45/405 -- GLOBAL_STEP: 2075[0m
+     | > loss: 0.38671  (0.36632)
+     | > log_mle: -0.25933  (-0.25740)
+     | > loss_dur: 0.64604  (0.62372)
+     | > grad_norm: 2.54505  (2.91746)
+     | > current_lr: 0.00052 
+     | > step_time: 1.04020  (0.64076)
+     | > loader_time: 0.00930  (0.01520)
+
+
+[1m   --> STEP: 70/405 -- GLOBAL_STEP: 2100[0m
+     | > loss: 0.36825  (0.35878)
+     | > log_mle: -0.26844  (-0.26256)
+     | > loss_dur: 0.63669  (0.62134)
+     | > grad_norm: 2.02619  (3.17201)
+     | > current_lr: 0.00052 
+     | > step_time: 0.73630  (0.67383)
+     | > loader_time: 0.02760  (0.01594)
+
+
+[1m   --> STEP: 95/405 -- GLOBAL_STEP: 2125[0m
+     | > loss: 0.32284  (0.35318)
+     | > log_mle: -0.28094  (-0.26658)
+     | > loss_dur: 0.60378  (0.61976)
+     | > grad_norm: 3.29488  (3.21320)
+     | > current_lr: 0.00053 
+     | > step_time: 0.81170  (0.68198)
+     | > loader_time: 0.03920  (0.01766)
+
+
+[1m   --> STEP: 120/405 -- GLOBAL_STEP: 2150[0m
+     | > loss: 0.31925  (0.35000)
+     | > log_mle: -0.27950  (-0.26922)
+     | > loss_dur: 0.59875  (0.61922)
+     | > grad_norm: 3.56362  (3.32121)
+     | > current_lr: 0.00053 
+     | > step_time: 0.83360  (0.71904)
+     | > loader_time: 0.01450  (0.01899)
+
+
+[1m   --> STEP: 145/405 -- GLOBAL_STEP: 2175[0m
+     | > loss: 0.36187  (0.34740)
+     | > log_mle: -0.28562  (-0.27168)
+     | > loss_dur: 0.64750  (0.61909)
+     | > grad_norm: 4.46627  (3.32048)
+     | > current_lr: 0.00054 
+     | > step_time: 0.92580  (0.74113)
+     | > loader_time: 0.01450  (0.02038)
+
+
+[1m   --> STEP: 170/405 -- GLOBAL_STEP: 2200[0m
+     | > loss: 0.33236  (0.34512)
+     | > log_mle: -0.27786  (-0.27395)
+     | > loss_dur: 0.61022  (0.61907)
+     | > grad_norm: 4.18931  (3.39784)
+     | > current_lr: 0.00055 
+     | > step_time: 0.96940  (0.76114)
+     | > loader_time: 0.01500  (0.02149)
+
+
+[1m   --> STEP: 195/405 -- GLOBAL_STEP: 2225[0m
+     | > loss: 0.32370  (0.34323)
+     | > log_mle: -0.30480  (-0.27645)
+     | > loss_dur: 0.62850  (0.61968)
+     | > grad_norm: 3.31593  (3.46970)
+     | > current_lr: 0.00055 
+     | > step_time: 0.43520  (0.76237)
+     | > loader_time: 0.00860  (0.02258)
+
+
+[1m   --> STEP: 220/405 -- GLOBAL_STEP: 2250[0m
+     | > loss: 0.38971  (0.34268)
+     | > log_mle: -0.29507  (-0.27831)
+     | > loss_dur: 0.68478  (0.62100)
+     | > grad_norm: 7.31664  (3.49361)
+     | > current_lr: 0.00056 
+     | > step_time: 1.09530  (0.78050)
+     | > loader_time: 0.05050  (0.02387)
+
+
+[1m   --> STEP: 245/405 -- GLOBAL_STEP: 2275[0m
+     | > loss: 0.32039  (0.34131)
+     | > log_mle: -0.30902  (-0.28040)
+     | > loss_dur: 0.62942  (0.62171)
+     | > grad_norm: 3.81714  (3.49822)
+     | > current_lr: 0.00057 
+     | > step_time: 1.05280  (0.79161)
+     | > loader_time: 0.01730  (0.02455)
+
+
+[1m   --> STEP: 270/405 -- GLOBAL_STEP: 2300[0m
+     | > loss: 0.31233  (0.33977)
+     | > log_mle: -0.29573  (-0.28216)
+     | > loss_dur: 0.60806  (0.62193)
+     | > grad_norm: 4.07869  (3.56349)
+     | > current_lr: 0.00057 
+     | > step_time: 0.91960  (0.81054)
+     | > loader_time: 0.02750  (0.02559)
+
+
+[1m   --> STEP: 295/405 -- GLOBAL_STEP: 2325[0m
+     | > loss: 0.30966  (0.33870)
+     | > log_mle: -0.30040  (-0.28386)
+     | > loss_dur: 0.61006  (0.62256)
+     | > grad_norm: 3.05557  (3.59643)
+     | > current_lr: 0.00058 
+     | > step_time: 1.58190  (0.83171)
+     | > loader_time: 0.05990  (0.02629)
+
+
+[1m   --> STEP: 320/405 -- GLOBAL_STEP: 2350[0m
+     | > loss: 0.33030  (0.33721)
+     | > log_mle: -0.30577  (-0.28549)
+     | > loss_dur: 0.63608  (0.62270)
+     | > grad_norm: 2.28681  (3.63455)
+     | > current_lr: 0.00058 
+     | > step_time: 0.61500  (0.83286)
+     | > loader_time: 0.03060  (0.03117)
+
+
+[1m   --> STEP: 345/405 -- GLOBAL_STEP: 2375[0m
+     | > loss: 0.30923  (0.33554)
+     | > log_mle: -0.30050  (-0.28680)
+     | > loss_dur: 0.60972  (0.62234)
+     | > grad_norm: 2.73024  (3.66574)
+     | > current_lr: 0.00059 
+     | > step_time: 1.01020  (0.85831)
+     | > loader_time: 0.04520  (0.03265)
+
+
+[1m   --> STEP: 370/405 -- GLOBAL_STEP: 2400[0m
+     | > loss: 0.31672  (0.33326)
+     | > log_mle: -0.30024  (-0.28801)
+     | > loss_dur: 0.61696  (0.62127)
+     | > grad_norm: 5.65449  (3.69481)
+     | > current_lr: 0.00060 
+     | > step_time: 0.89510  (0.87989)
+     | > loader_time: 0.03760  (0.03299)
+
+
+[1m   --> STEP: 395/405 -- GLOBAL_STEP: 2425[0m
+     | > loss: 0.25117  (0.33102)
+     | > log_mle: -0.30204  (-0.28877)
+     | > loss_dur: 0.55321  (0.61979)
+     | > grad_norm: 5.62058  (3.67583)
+     | > current_lr: 0.00060 
+     | > step_time: 1.17600  (0.89637)
+     | > loader_time: 0.02050  (0.03331)
+
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 131
+ | > Max length sequence: 174
+ | > Min length sequence: 20
+ | > Avg length sequence: 100.76335877862596
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > EVALUATION [0m
+
+ | > Synthesizing test sentences.
+
+  [1m--> EVAL PERFORMANCE[0m
+     | > avg_loader_time:[91m 0.05484 [0m(+0.03845)
+     | > avg_loss:[92m 0.31395 [0m(-0.00657)
+     | > avg_log_mle:[92m -0.32825 [0m(-0.03166)
+     | > avg_loss_dur:[91m 0.64220 [0m(+0.02509)
+
+ > BEST MODEL : /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26/best_model_2436.pth.tar
+
+[4m[1m > EPOCH: 6/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 17:15:29) [0m
+
+[1m   --> STEP: 14/405 -- GLOBAL_STEP: 2450[0m
+     | > loss: 0.40893  (0.33958)
+     | > log_mle: -0.26592  (-0.28591)
+     | > loss_dur: 0.67485  (0.62549)
+     | > grad_norm: 6.53760  (3.27073)
+     | > current_lr: 0.00061 
+     | > step_time: 0.45740  (0.61285)
+     | > loader_time: 0.00890  (0.01632)
+
+
+[1m   --> STEP: 39/405 -- GLOBAL_STEP: 2475[0m
+     | > loss: 0.31929  (0.34175)
+     | > log_mle: -0.29113  (-0.28548)
+     | > loss_dur: 0.61042  (0.62724)
+     | > grad_norm: 1.70537  (3.29136)
+     | > current_lr: 0.00062 
+     | > step_time: 0.50340  (0.60847)
+     | > loader_time: 0.00590  (0.01676)
+
+
+[1m   --> STEP: 64/405 -- GLOBAL_STEP: 2500[0m
+     | > loss: 0.36392  (0.33946)
+     | > log_mle: -0.29378  (-0.28682)
+     | > loss_dur: 0.65770  (0.62628)
+     | > grad_norm: 5.14409  (3.49684)
+     | > current_lr: 0.00062 
+     | > step_time: 0.72100  (0.65995)
+     | > loader_time: 0.01350  (0.01805)
+
+
+[1m   --> STEP: 89/405 -- GLOBAL_STEP: 2525[0m
+     | > loss: 0.29184  (0.33273)
+     | > log_mle: -0.29951  (-0.29130)
+     | > loss_dur: 0.59135  (0.62403)
+     | > grad_norm: 4.34879  (3.69710)
+     | > current_lr: 0.00063 
+     | > step_time: 0.89910  (0.67837)
+     | > loader_time: 0.01340  (0.02113)
+
+
+[1m   --> STEP: 114/405 -- GLOBAL_STEP: 2550[0m
+     | > loss: 0.28940  (0.32804)
+     | > log_mle: -0.30948  (-0.29496)
+     | > loss_dur: 0.59889  (0.62301)
+     | > grad_norm: 1.97902  (3.58386)
+     | > current_lr: 0.00063 
+     | > step_time: 1.19380  (0.70172)
+     | > loader_time: 0.02710  (0.02146)
+
+
+[1m   --> STEP: 139/405 -- GLOBAL_STEP: 2575[0m
+     | > loss: 0.29734  (0.32559)
+     | > log_mle: -0.30766  (-0.29749)
+     | > loss_dur: 0.60500  (0.62308)
+     | > grad_norm: 3.18822  (3.66759)
+     | > current_lr: 0.00064 
+     | > step_time: 0.75030  (0.71603)
+     | > loader_time: 0.01990  (0.02200)
+
+
+[1m   --> STEP: 164/405 -- GLOBAL_STEP: 2600[0m
+     | > loss: 0.32185  (0.32195)
+     | > log_mle: -0.31602  (-0.30033)
+     | > loss_dur: 0.63786  (0.62228)
+     | > grad_norm: 3.45329  (3.77917)
+     | > current_lr: 0.00065 
+     | > step_time: 0.78940  (0.74653)
+     | > loader_time: 0.01270  (0.02316)
+
+
+[1m   --> STEP: 189/405 -- GLOBAL_STEP: 2625[0m
+     | > loss: 0.31989  (0.31940)
+     | > log_mle: -0.34156  (-0.30278)
+     | > loss_dur: 0.66145  (0.62217)
+     | > grad_norm: 3.16451  (3.85130)
+     | > current_lr: 0.00065 
+     | > step_time: 1.09630  (0.76512)
+     | > loader_time: 0.04820  (0.02354)
+
+
+[1m   --> STEP: 214/405 -- GLOBAL_STEP: 2650[0m
+     | > loss: 0.30561  (0.31803)
+     | > log_mle: -0.31015  (-0.30501)
+     | > loss_dur: 0.61576  (0.62304)
+     | > grad_norm: 2.45917  (3.93254)
+     | > current_lr: 0.00066 
+     | > step_time: 1.11440  (0.79238)
+     | > loader_time: 0.02280  (0.02392)
+
+
+[1m   --> STEP: 239/405 -- GLOBAL_STEP: 2675[0m
+     | > loss: 0.33663  (0.31636)
+     | > log_mle: -0.31290  (-0.30713)
+     | > loss_dur: 0.64954  (0.62348)
+     | > grad_norm: 5.38531  (4.01666)
+     | > current_lr: 0.00067 
+     | > step_time: 1.05020  (0.81436)
+     | > loader_time: 0.02150  (0.02523)
+
+
+[1m   --> STEP: 264/405 -- GLOBAL_STEP: 2700[0m
+     | > loss: 0.33028  (0.31615)
+     | > log_mle: -0.32504  (-0.30830)
+     | > loss_dur: 0.65532  (0.62445)
+     | > grad_norm: 3.71648  (4.07824)
+     | > current_lr: 0.00067 
+     | > step_time: 0.97090  (0.83238)
+     | > loader_time: 0.02200  (0.02577)
+
+
+[1m   --> STEP: 289/405 -- GLOBAL_STEP: 2725[0m
+     | > loss: 0.30557  (0.31503)
+     | > log_mle: -0.32080  (-0.30978)
+     | > loss_dur: 0.62637  (0.62481)
+     | > grad_norm: 3.47943  (4.14894)
+     | > current_lr: 0.00068 
+     | > step_time: 0.59920  (0.84223)
+     | > loader_time: 0.02050  (0.02589)
+
+
+[1m   --> STEP: 314/405 -- GLOBAL_STEP: 2750[0m
+     | > loss: 0.31571  (0.31364)
+     | > log_mle: -0.33501  (-0.31135)
+     | > loss_dur: 0.65072  (0.62499)
+     | > grad_norm: 7.90347  (4.16414)
+     | > current_lr: 0.00068 
+     | > step_time: 0.83150  (0.85584)
+     | > loader_time: 0.02300  (0.02684)
+
+
+[1m   --> STEP: 339/405 -- GLOBAL_STEP: 2775[0m
+     | > loss: 0.29163  (0.31228)
+     | > log_mle: -0.32464  (-0.31250)
+     | > loss_dur: 0.61626  (0.62478)
+     | > grad_norm: 7.07919  (4.22916)
+     | > current_lr: 0.00069 
+     | > step_time: 0.58980  (0.87228)
+     | > loader_time: 0.01610  (0.02730)
+
+
+[1m   --> STEP: 364/405 -- GLOBAL_STEP: 2800[0m
+     | > loss: 0.29357  (0.31060)
+     | > log_mle: -0.32129  (-0.31360)
+     | > loss_dur: 0.61486  (0.62419)
+     | > grad_norm: 12.58528  (4.27886)
+     | > current_lr: 0.00070 
+     | > step_time: 1.15520  (0.88485)
+     | > loader_time: 0.03560  (0.02827)
+
+
+[1m   --> STEP: 389/405 -- GLOBAL_STEP: 2825[0m
+     | > loss: 0.25354  (0.30849)
+     | > log_mle: -0.32958  (-0.31447)
+     | > loss_dur: 0.58312  (0.62296)
+     | > grad_norm: 3.83570  (4.31511)
+     | > current_lr: 0.00070 
+     | > step_time: 0.75360  (0.90633)
+     | > loader_time: 0.03770  (0.02870)
+
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 131
+ | > Max length sequence: 174
+ | > Min length sequence: 20
+ | > Avg length sequence: 100.76335877862596
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > EVALUATION [0m
+
+ | > Synthesizing test sentences.
+
+  [1m--> EVAL PERFORMANCE[0m
+     | > avg_loader_time:[92m 0.01148 [0m(-0.04336)
+     | > avg_loss:[91m 0.45489 [0m(+0.14094)
+     | > avg_log_mle:[92m -0.33646 [0m(-0.00821)
+     | > avg_loss_dur:[91m 0.79135 [0m(+0.14915)
+
+
+[4m[1m > EPOCH: 7/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 17:22:16) [0m
+
+[1m   --> STEP: 8/405 -- GLOBAL_STEP: 2850[0m
+     | > loss: 0.31630  (0.35483)
+     | > log_mle: -0.29753  (-0.30853)
+     | > loss_dur: 0.61383  (0.66336)
+     | > grad_norm: 4.00662  (4.06092)
+     | > current_lr: 0.00071 
+     | > step_time: 0.76580  (0.66943)
+     | > loader_time: 0.02470  (0.01835)
+
+
+[1m   --> STEP: 33/405 -- GLOBAL_STEP: 2875[0m
+     | > loss: 0.28941  (0.33373)
+     | > log_mle: -0.32994  (-0.30582)
+     | > loss_dur: 0.61935  (0.63955)
+     | > grad_norm: 5.88690  (3.61511)
+     | > current_lr: 0.00072 
+     | > step_time: 0.96160  (0.64546)
+     | > loader_time: 0.02170  (0.01836)
+
+
+[1m   --> STEP: 58/405 -- GLOBAL_STEP: 2900[0m
+     | > loss: 0.29789  (0.31989)
+     | > log_mle: -0.31293  (-0.30832)
+     | > loss_dur: 0.61082  (0.62822)
+     | > grad_norm: 1.95998  (3.98838)
+     | > current_lr: 0.00072 
+     | > step_time: 0.46700  (0.67449)
+     | > loader_time: 0.01320  (0.01971)
+
+
+[1m   --> STEP: 83/405 -- GLOBAL_STEP: 2925[0m
+     | > loss: 0.37146  (0.31471)
+     | > log_mle: -0.30634  (-0.31266)
+     | > loss_dur: 0.67780  (0.62737)
+     | > grad_norm: 4.21799  (4.19129)
+     | > current_lr: 0.00073 
+     | > step_time: 0.42610  (0.68785)
+     | > loader_time: 0.01290  (0.01991)
+
+
+[1m   --> STEP: 108/405 -- GLOBAL_STEP: 2950[0m
+     | > loss: 0.31025  (0.31282)
+     | > log_mle: -0.31802  (-0.31470)
+     | > loss_dur: 0.62826  (0.62752)
+     | > grad_norm: 3.04001  (4.31904)
+     | > current_lr: 0.00073 
+     | > step_time: 0.76000  (0.71052)
+     | > loader_time: 0.01280  (0.02054)
+
+
+[1m   --> STEP: 133/405 -- GLOBAL_STEP: 2975[0m
+     | > loss: 0.29829  (0.30986)
+     | > log_mle: -0.32176  (-0.31697)
+     | > loss_dur: 0.62005  (0.62683)
+     | > grad_norm: 3.04044  (4.21630)
+     | > current_lr: 0.00074 
+     | > step_time: 0.42150  (0.74347)
+     | > loader_time: 0.01860  (0.02127)
+
+
+[1m   --> STEP: 158/405 -- GLOBAL_STEP: 3000[0m
+     | > loss: 0.28795  (0.30659)
+     | > log_mle: -0.33082  (-0.31921)
+     | > loss_dur: 0.61877  (0.62580)
+     | > grad_norm: 3.35297  (4.17237)
+     | > current_lr: 0.00075 
+     | > step_time: 1.08440  (0.76187)
+     | > loader_time: 0.03810  (0.02308)
+
+
+[1m   --> STEP: 183/405 -- GLOBAL_STEP: 3025[0m
+     | > loss: 0.27619  (0.30311)
+     | > log_mle: -0.36459  (-0.32181)
+     | > loss_dur: 0.64077  (0.62492)
+     | > grad_norm: 3.65776  (4.26177)
+     | > current_lr: 0.00075 
+     | > step_time: 0.50920  (0.77724)
+     | > loader_time: 0.01500  (0.02384)
+
+
+[1m   --> STEP: 208/405 -- GLOBAL_STEP: 3050[0m
+     | > loss: 0.31112  (0.30199)
+     | > log_mle: -0.33468  (-0.32351)
+     | > loss_dur: 0.64580  (0.62550)
+     | > grad_norm: 3.64574  (4.38590)
+     | > current_lr: 0.00076 
+     | > step_time: 1.42990  (0.79653)
+     | > loader_time: 0.01610  (0.02447)
+
+
+[1m   --> STEP: 233/405 -- GLOBAL_STEP: 3075[0m
+     | > loss: 0.32281  (0.30125)
+     | > log_mle: -0.34223  (-0.32527)
+     | > loss_dur: 0.66504  (0.62652)
+     | > grad_norm: 5.46960  (4.51747)
+     | > current_lr: 0.00077 
+     | > step_time: 0.97920  (0.81709)
+     | > loader_time: 0.01650  (0.02629)
+
+
+[1m   --> STEP: 258/405 -- GLOBAL_STEP: 3100[0m
+     | > loss: 0.28085  (0.30025)
+     | > log_mle: -0.34579  (-0.32687)
+     | > loss_dur: 0.62664  (0.62712)
+     | > grad_norm: 6.45038  (4.50855)
+     | > current_lr: 0.00077 
+     | > step_time: 0.57820  (0.83280)
+     | > loader_time: 0.01590  (0.02625)
+
+
+[1m   --> STEP: 283/405 -- GLOBAL_STEP: 3125[0m
+     | > loss: 0.31276  (0.29969)
+     | > log_mle: -0.33642  (-0.32745)
+     | > loss_dur: 0.64918  (0.62715)
+     | > grad_norm: 3.04609  (4.60667)
+     | > current_lr: 0.00078 
+     | > step_time: 1.14360  (0.84677)
+     | > loader_time: 0.03020  (0.02718)
+
+
+[1m   --> STEP: 308/405 -- GLOBAL_STEP: 3150[0m
+     | > loss: 0.30516  (0.29901)
+     | > log_mle: -0.34015  (-0.32874)
+     | > loss_dur: 0.64531  (0.62775)
+     | > grad_norm: 4.73862  (4.64124)
+     | > current_lr: 0.00078 
+     | > step_time: 0.97120  (0.86811)
+     | > loader_time: 0.05590  (0.02827)
+
+
+[1m   --> STEP: 333/405 -- GLOBAL_STEP: 3175[0m
+     | > loss: 0.29624  (0.29780)
+     | > log_mle: -0.35183  (-0.33010)
+     | > loss_dur: 0.64808  (0.62790)
+     | > grad_norm: 5.58341  (4.63870)
+     | > current_lr: 0.00079 
+     | > step_time: 0.93160  (0.88038)
+     | > loader_time: 0.04440  (0.02828)
+
+
+[1m   --> STEP: 358/405 -- GLOBAL_STEP: 3200[0m
+     | > loss: 0.26233  (0.29591)
+     | > log_mle: -0.35319  (-0.33138)
+     | > loss_dur: 0.61551  (0.62729)
+     | > grad_norm: 4.24885  (4.70681)
+     | > current_lr: 0.00080 
+     | > step_time: 1.39990  (0.88350)
+     | > loader_time: 0.04970  (0.02929)
+
+
+[1m   --> STEP: 383/405 -- GLOBAL_STEP: 3225[0m
+     | > loss: 0.26088  (0.29345)
+     | > log_mle: -0.33862  (-0.33247)
+     | > loss_dur: 0.59950  (0.62592)
+     | > grad_norm: 3.72944  (4.78043)
+     | > current_lr: 0.00080 
+     | > step_time: 0.98060  (0.89897)
+     | > loader_time: 0.02370  (0.03341)
+
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 131
+ | > Max length sequence: 174
+ | > Min length sequence: 20
+ | > Avg length sequence: 100.76335877862596
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > EVALUATION [0m
+
+ | > Synthesizing test sentences.
+
+  [1m--> EVAL PERFORMANCE[0m
+     | > avg_loader_time:[91m 0.02269 [0m(+0.01121)
+     | > avg_loss:[92m 0.40164 [0m(-0.05324)
+     | > avg_log_mle:[92m -0.35531 [0m(-0.01884)
+     | > avg_loss_dur:[92m 0.75695 [0m(-0.03440)
+
+
+[4m[1m > EPOCH: 8/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 17:29:04) [0m
+
+[1m   --> STEP: 2/405 -- GLOBAL_STEP: 3250[0m
+     | > loss: 0.27300  (0.29611)
+     | > log_mle: -0.32368  (-0.32850)
+     | > loss_dur: 0.59668  (0.62461)
+     | > grad_norm: 2.74908  (2.45113)
+     | > current_lr: 0.00081 
+     | > step_time: 0.79960  (0.76361)
+     | > loader_time: 0.02340  (0.01903)
+
+
+[1m   --> STEP: 27/405 -- GLOBAL_STEP: 3275[0m
+     | > loss: 0.32371  (0.31195)
+     | > log_mle: -0.31250  (-0.32054)
+     | > loss_dur: 0.63622  (0.63248)
+     | > grad_norm: 5.67251  (3.48420)
+     | > current_lr: 0.00082 
+     | > step_time: 0.52590  (0.59628)
+     | > loader_time: 0.01440  (0.01618)
+
+
+[1m   --> STEP: 52/405 -- GLOBAL_STEP: 3300[0m
+     | > loss: 0.27157  (0.30064)
+     | > log_mle: -0.34304  (-0.32300)
+     | > loss_dur: 0.61461  (0.62364)
+     | > grad_norm: 5.82110  (3.70711)
+     | > current_lr: 0.00082 
+     | > step_time: 0.73360  (0.64070)
+     | > loader_time: 0.01890  (0.01614)
+
+
+[1m   --> STEP: 77/405 -- GLOBAL_STEP: 3325[0m
+     | > loss: 0.33052  (0.29760)
+     | > log_mle: -0.32662  (-0.32756)
+     | > loss_dur: 0.65715  (0.62516)
+     | > grad_norm: 4.47196  (3.75220)
+     | > current_lr: 0.00083 
+     | > step_time: 0.35680  (0.67595)
+     | > loader_time: 0.01970  (0.02017)
+
+
+[1m   --> STEP: 102/405 -- GLOBAL_STEP: 3350[0m
+     | > loss: 0.29643  (0.29297)
+     | > log_mle: -0.33645  (-0.33078)
+     | > loss_dur: 0.63288  (0.62376)
+     | > grad_norm: 2.72530  (4.09073)
+     | > current_lr: 0.00083 
+     | > step_time: 0.79980  (0.70116)
+     | > loader_time: 0.02160  (0.02410)
+
+
+[1m   --> STEP: 127/405 -- GLOBAL_STEP: 3375[0m
+     | > loss: 0.28617  (0.29060)
+     | > log_mle: -0.35837  (-0.33367)
+     | > loss_dur: 0.64454  (0.62427)
+     | > grad_norm: 3.14690  (4.14057)
+     | > current_lr: 0.00084 
+     | > step_time: 0.73210  (0.72793)
+     | > loader_time: 0.07290  (0.02562)
+
+
+[1m   --> STEP: 152/405 -- GLOBAL_STEP: 3400[0m
+     | > loss: 0.26526  (0.28883)
+     | > log_mle: -0.35081  (-0.33550)
+     | > loss_dur: 0.61607  (0.62433)
+     | > grad_norm: 5.12307  (4.27923)
+     | > current_lr: 0.00085 
+     | > step_time: 0.42960  (0.74402)
+     | > loader_time: 0.01260  (0.02516)
+
+
+[1m   --> STEP: 177/405 -- GLOBAL_STEP: 3425[0m
+     | > loss: 0.26576  (0.28758)
+     | > log_mle: -0.35149  (-0.33668)
+     | > loss_dur: 0.61725  (0.62426)
+     | > grad_norm: 6.78004  (4.30187)
+     | > current_lr: 0.00085 
+     | > step_time: 0.60280  (0.75923)
+     | > loader_time: 0.01600  (0.02474)
+
+
+[1m   --> STEP: 202/405 -- GLOBAL_STEP: 3450[0m
+     | > loss: 0.29656  (0.28650)
+     | > log_mle: -0.35532  (-0.33845)
+     | > loss_dur: 0.65189  (0.62495)
+     | > grad_norm: 3.66870  (4.35805)
+     | > current_lr: 0.00086 
+     | > step_time: 0.65040  (0.77774)
+     | > loader_time: 0.01680  (0.02483)
+
+
+[1m   --> STEP: 227/405 -- GLOBAL_STEP: 3475[0m
+     | > loss: 0.27673  (0.28502)
+     | > log_mle: -0.34084  (-0.33999)
+     | > loss_dur: 0.61757  (0.62501)
+     | > grad_norm: 3.05537  (4.45287)
+     | > current_lr: 0.00087 
+     | > step_time: 1.02720  (0.78518)
+     | > loader_time: 0.01690  (0.02498)
+
+
+[1m   --> STEP: 252/405 -- GLOBAL_STEP: 3500[0m
+     | > loss: 0.25915  (0.28542)
+     | > log_mle: -0.36503  (-0.34118)
+     | > loss_dur: 0.62417  (0.62660)
+     | > grad_norm: 4.55971  (4.60148)
+     | > current_lr: 0.00087 
+     | > step_time: 1.05750  (0.81176)
+     | > loader_time: 0.02160  (0.02607)
+
+
+[1m   --> STEP: 277/405 -- GLOBAL_STEP: 3525[0m
+     | > loss: 0.28355  (0.28415)
+     | > log_mle: -0.35839  (-0.34239)
+     | > loss_dur: 0.64193  (0.62654)
+     | > grad_norm: 3.99149  (4.69720)
+     | > current_lr: 0.00088 
+     | > step_time: 0.68150  (0.82645)
+     | > loader_time: 0.01830  (0.02677)
+
+
+[1m   --> STEP: 302/405 -- GLOBAL_STEP: 3550[0m
+     | > loss: 0.25473  (0.28288)
+     | > log_mle: -0.35936  (-0.34380)
+     | > loss_dur: 0.61409  (0.62667)
+     | > grad_norm: 4.33223  (4.77332)
+     | > current_lr: 0.00088 
+     | > step_time: 1.14000  (0.84209)
+     | > loader_time: 0.01690  (0.02725)
+
+
+[1m   --> STEP: 327/405 -- GLOBAL_STEP: 3575[0m
+     | > loss: 0.24254  (0.28144)
+     | > log_mle: -0.37522  (-0.34498)
+     | > loss_dur: 0.61776  (0.62642)
+     | > grad_norm: 9.30611  (4.79960)
+     | > current_lr: 0.00089 
+     | > step_time: 0.94160  (0.85932)
+     | > loader_time: 0.01880  (0.02818)
+
+
+[1m   --> STEP: 352/405 -- GLOBAL_STEP: 3600[0m
+     | > loss: 0.27427  (0.28008)
+     | > log_mle: -0.36102  (-0.34583)
+     | > loss_dur: 0.63529  (0.62591)
+     | > grad_norm: 6.28081  (4.80428)
+     | > current_lr: 0.00090 
+     | > step_time: 1.00300  (0.87563)
+     | > loader_time: 0.02130  (0.02889)
+
+
+[1m   --> STEP: 377/405 -- GLOBAL_STEP: 3625[0m
+     | > loss: 0.23957  (0.27817)
+     | > log_mle: -0.35968  (-0.34673)
+     | > loss_dur: 0.59925  (0.62490)
+     | > grad_norm: 7.56708  (4.79367)
+     | > current_lr: 0.00090 
+     | > step_time: 0.96970  (0.88960)
+     | > loader_time: 0.01530  (0.02886)
+
+
+[1m   --> STEP: 402/405 -- GLOBAL_STEP: 3650[0m
+     | > loss: 0.18946  (0.27553)
+     | > log_mle: -0.35519  (-0.34746)
+     | > loss_dur: 0.54464  (0.62298)
+     | > grad_norm: 2.10674  (4.78717)
+     | > current_lr: 0.00091 
+     | > step_time: 0.42220  (0.89924)
+     | > loader_time: 0.01280  (0.02986)
+
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 131
+ | > Max length sequence: 174
+ | > Min length sequence: 20
+ | > Avg length sequence: 100.76335877862596
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > EVALUATION [0m
+
+ | > Synthesizing test sentences.
+
+  [1m--> EVAL PERFORMANCE[0m
+     | > avg_loader_time:[92m 0.01842 [0m(-0.00427)
+     | > avg_loss:[92m 0.34367 [0m(-0.05797)
+     | > avg_log_mle:[92m -0.36542 [0m(-0.01011)
+     | > avg_loss_dur:[92m 0.70909 [0m(-0.04786)
+
+
+[4m[1m > EPOCH: 9/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 17:35:48) [0m
+
+[1m   --> STEP: 21/405 -- GLOBAL_STEP: 3675[0m
+     | > loss: 0.29965  (0.29482)
+     | > log_mle: -0.33774  (-0.33505)
+     | > loss_dur: 0.63739  (0.62988)
+     | > grad_norm: 9.54956  (4.75848)
+     | > current_lr: 0.00092 
+     | > step_time: 0.38390  (0.65621)
+     | > loader_time: 0.01420  (0.01841)
+
+
+[1m   --> STEP: 46/405 -- GLOBAL_STEP: 3700[0m
+     | > loss: 0.26320  (0.29663)
+     | > log_mle: -0.33942  (-0.33380)
+     | > loss_dur: 0.60261  (0.63042)
+     | > grad_norm: 7.19999  (4.57095)
+     | > current_lr: 0.00092 
+     | > step_time: 0.41690  (0.67216)
+     | > loader_time: 0.01010  (0.01944)
+
+
+[1m   --> STEP: 71/405 -- GLOBAL_STEP: 3725[0m
+     | > loss: 0.29033  (0.29036)
+     | > log_mle: -0.34496  (-0.33893)
+     | > loss_dur: 0.63528  (0.62929)
+     | > grad_norm: 6.72235  (4.75779)
+     | > current_lr: 0.00093 
+     | > step_time: 0.45330  (0.69677)
+     | > loader_time: 0.01050  (0.02058)
+
+
+[1m   --> STEP: 96/405 -- GLOBAL_STEP: 3750[0m
+     | > loss: 0.28549  (0.28600)
+     | > log_mle: -0.35133  (-0.34255)
+     | > loss_dur: 0.63682  (0.62855)
+     | > grad_norm: 7.24183  (4.81527)
+     | > current_lr: 0.00093 
+     | > step_time: 0.70580  (0.71377)
+     | > loader_time: 0.01970  (0.02133)
+
+
+[1m   --> STEP: 121/405 -- GLOBAL_STEP: 3775[0m
+     | > loss: 0.28020  (0.28387)
+     | > log_mle: -0.37879  (-0.34487)
+     | > loss_dur: 0.65899  (0.62873)
+     | > grad_norm: 7.28973  (4.86786)
+     | > current_lr: 0.00094 
+     | > step_time: 1.48480  (0.73906)
+     | > loader_time: 0.07560  (0.02295)
+
+
+[1m   --> STEP: 146/405 -- GLOBAL_STEP: 3800[0m
+     | > loss: 0.26098  (0.28091)
+     | > log_mle: -0.37502  (-0.34726)
+     | > loss_dur: 0.63601  (0.62816)
+     | > grad_norm: 3.26013  (4.87856)
+     | > current_lr: 0.00095 
+     | > step_time: 1.08510  (0.76330)
+     | > loader_time: 0.03920  (0.02269)
+
+
+[1m   --> STEP: 171/405 -- GLOBAL_STEP: 3825[0m
+     | > loss: 0.29046  (0.27859)
+     | > log_mle: -0.34680  (-0.34901)
+     | > loss_dur: 0.63726  (0.62759)
+     | > grad_norm: 5.30106  (5.00634)
+     | > current_lr: 0.00095 
+     | > step_time: 1.20320  (0.78010)
+     | > loader_time: 0.03260  (0.02346)
+
+
+[1m   --> STEP: 196/405 -- GLOBAL_STEP: 3850[0m
+     | > loss: 0.23208  (0.27667)
+     | > log_mle: -0.38363  (-0.35134)
+     | > loss_dur: 0.61571  (0.62801)
+     | > grad_norm: 9.76977  (5.12985)
+     | > current_lr: 0.00096 
+     | > step_time: 0.61230  (0.79390)
+     | > loader_time: 0.03220  (0.02712)
+
+
+[1m   --> STEP: 221/405 -- GLOBAL_STEP: 3875[0m
+     | > loss: 0.27922  (0.27607)
+     | > log_mle: -0.36150  (-0.35239)
+     | > loss_dur: 0.64072  (0.62847)
+     | > grad_norm: 2.72750  (5.17393)
+     | > current_lr: 0.00097 
+     | > step_time: 1.21880  (0.82217)
+     | > loader_time: 0.03610  (0.02767)
+
+
+[1m   --> STEP: 246/405 -- GLOBAL_STEP: 3900[0m
+     | > loss: 0.26392  (0.27576)
+     | > log_mle: -0.36838  (-0.35325)
+     | > loss_dur: 0.63230  (0.62901)
+     | > grad_norm: 9.23984  (5.21007)
+     | > current_lr: 0.00097 
+     | > step_time: 0.87180  (0.83261)
+     | > loader_time: 0.03510  (0.02869)
+
+
+[1m   --> STEP: 271/405 -- GLOBAL_STEP: 3925[0m
+     | > loss: 0.25611  (0.27499)
+     | > log_mle: -0.35523  (-0.35430)
+     | > loss_dur: 0.61134  (0.62929)
+     | > grad_norm: 6.59254  (5.24141)
+     | > current_lr: 0.00098 
+     | > step_time: 1.12190  (0.84832)
+     | > loader_time: 0.02520  (0.02865)
+
+
+[1m   --> STEP: 296/405 -- GLOBAL_STEP: 3950[0m
+     | > loss: 0.26586  (0.27362)
+     | > log_mle: -0.37502  (-0.35595)
+     | > loss_dur: 0.64088  (0.62957)
+     | > grad_norm: 10.49380  (5.28698)
+     | > current_lr: 0.00098 
+     | > step_time: 0.54260  (0.86406)
+     | > loader_time: 0.02060  (0.02911)
+
+
+[1m   --> STEP: 321/405 -- GLOBAL_STEP: 3975[0m
+     | > loss: 0.24804  (0.27236)
+     | > log_mle: -0.36886  (-0.35728)
+     | > loss_dur: 0.61689  (0.62964)
+     | > grad_norm: 5.28183  (5.30293)
+     | > current_lr: 0.00099 
+     | > step_time: 0.66370  (0.87842)
+     | > loader_time: 0.02010  (0.02975)
+
+
+[1m   --> STEP: 346/405 -- GLOBAL_STEP: 4000[0m
+     | > loss: 0.24916  (0.27090)
+     | > log_mle: -0.36429  (-0.35836)
+     | > loss_dur: 0.61345  (0.62926)
+     | > grad_norm: 10.96373  (5.32559)
+     | > current_lr: 0.00100 
+     | > step_time: 0.77700  (0.88883)
+     | > loader_time: 0.02840  (0.03127)
+
+
+[1m   --> STEP: 371/405 -- GLOBAL_STEP: 4025[0m
+     | > loss: 0.24896  (0.26953)
+     | > log_mle: -0.35651  (-0.35887)
+     | > loss_dur: 0.60547  (0.62840)
+     | > grad_norm: 12.47968  (5.27111)
+     | > current_lr: 0.00100 
+     | > step_time: 0.68100  (0.90322)
+     | > loader_time: 0.03410  (0.03129)
+
+
+[1m   --> STEP: 396/405 -- GLOBAL_STEP: 4050[0m
+     | > loss: 0.20587  (0.26740)
+     | > log_mle: -0.37006  (-0.35946)
+     | > loss_dur: 0.57592  (0.62687)
+     | > grad_norm: 7.79461  (5.32007)
+     | > current_lr: 0.00100 
+     | > step_time: 1.06710  (0.91787)
+     | > loader_time: 0.04750  (0.03244)
+
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 131
+ | > Max length sequence: 174
+ | > Min length sequence: 20
+ | > Avg length sequence: 100.76335877862596
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > EVALUATION [0m
+
+ | > Synthesizing test sentences.
+
+  [1m--> EVAL PERFORMANCE[0m
+     | > avg_loader_time:[92m 0.01353 [0m(-0.00489)
+     | > avg_loss:[92m 0.27626 [0m(-0.06741)
+     | > avg_log_mle:[92m -0.37347 [0m(-0.00806)
+     | > avg_loss_dur:[92m 0.64973 [0m(-0.05936)
+
+ > BEST MODEL : /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26/best_model_4060.pth.tar
+
+[4m[1m > EPOCH: 10/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 17:42:37) [0m
+
+[1m   --> STEP: 15/405 -- GLOBAL_STEP: 4075[0m
+     | > loss: 0.28785  (0.28693)
+     | > log_mle: -0.35007  (-0.34870)
+     | > loss_dur: 0.63793  (0.63563)
+     | > grad_norm: 3.97417  (3.79932)
+     | > current_lr: 0.00099 
+     | > step_time: 0.59240  (0.63178)
+     | > loader_time: 0.02690  (0.02020)
+
+
+[1m   --> STEP: 40/405 -- GLOBAL_STEP: 4100[0m
+     | > loss: 0.26571  (0.28086)
+     | > log_mle: -0.35628  (-0.34633)
+     | > loss_dur: 0.62199  (0.62720)
+     | > grad_norm: 2.87835  (4.71601)
+     | > current_lr: 0.00099 
+     | > step_time: 0.83150  (0.64388)
+     | > loader_time: 0.01500  (0.01814)
+
+
+[1m   --> STEP: 65/405 -- GLOBAL_STEP: 4125[0m
+     | > loss: 0.28259  (0.27610)
+     | > log_mle: -0.35227  (-0.35001)
+     | > loss_dur: 0.63485  (0.62611)
+     | > grad_norm: 7.05999  (5.38057)
+     | > current_lr: 0.00099 
+     | > step_time: 0.54750  (0.66792)
+     | > loader_time: 0.01620  (0.01877)
+
+
+[1m   --> STEP: 90/405 -- GLOBAL_STEP: 4150[0m
+     | > loss: 0.21869  (0.27167)
+     | > log_mle: -0.39282  (-0.35440)
+     | > loss_dur: 0.61150  (0.62607)
+     | > grad_norm: 3.37871  (5.26584)
+     | > current_lr: 0.00098 
+     | > step_time: 1.10200  (0.70490)
+     | > loader_time: 0.01250  (0.02002)
+
+
+[1m   --> STEP: 115/405 -- GLOBAL_STEP: 4175[0m
+     | > loss: 0.26056  (0.26859)
+     | > log_mle: -0.38793  (-0.35729)
+     | > loss_dur: 0.64849  (0.62588)
+     | > grad_norm: 5.66509  (5.53197)
+     | > current_lr: 0.00098 
+     | > step_time: 0.87140  (0.73177)
+     | > loader_time: 0.01420  (0.02113)
+
+
+[1m   --> STEP: 140/405 -- GLOBAL_STEP: 4200[0m
+     | > loss: 0.25220  (0.26515)
+     | > log_mle: -0.36647  (-0.35976)
+     | > loss_dur: 0.61867  (0.62491)
+     | > grad_norm: 6.24702  (5.53968)
+     | > current_lr: 0.00098 
+     | > step_time: 1.51000  (0.76623)
+     | > loader_time: 0.07900  (0.02259)
+
+
+[1m   --> STEP: 165/405 -- GLOBAL_STEP: 4225[0m
+     | > loss: 0.24135  (0.26339)
+     | > log_mle: -0.37614  (-0.36188)
+     | > loss_dur: 0.61749  (0.62528)
+     | > grad_norm: 4.47625  (5.45402)
+     | > current_lr: 0.00097 
+     | > step_time: 0.79440  (0.77281)
+     | > loader_time: 0.01210  (0.02379)
+
+
+[1m   --> STEP: 190/405 -- GLOBAL_STEP: 4250[0m
+     | > loss: 0.27265  (0.26133)
+     | > log_mle: -0.38404  (-0.36415)
+     | > loss_dur: 0.65669  (0.62547)
+     | > grad_norm: 4.65506  (5.49692)
+     | > current_lr: 0.00097 
+     | > step_time: 1.06810  (0.78846)
+     | > loader_time: 0.01580  (0.02441)
+
+
+[1m   --> STEP: 215/405 -- GLOBAL_STEP: 4275[0m
+     | > loss: 0.24961  (0.26032)
+     | > log_mle: -0.38186  (-0.36581)
+     | > loss_dur: 0.63146  (0.62613)
+     | > grad_norm: 4.31590  (5.56980)
+     | > current_lr: 0.00097 
+     | > step_time: 0.51080  (0.80191)
+     | > loader_time: 0.03980  (0.02495)
+
+
+[1m   --> STEP: 240/405 -- GLOBAL_STEP: 4300[0m
+     | > loss: 0.24611  (0.25872)
+     | > log_mle: -0.38070  (-0.36757)
+     | > loss_dur: 0.62681  (0.62630)
+     | > grad_norm: 4.36466  (5.62062)
+     | > current_lr: 0.00097 
+     | > step_time: 0.70040  (0.79817)
+     | > loader_time: 0.02550  (0.03524)
+
+
+[1m   --> STEP: 265/405 -- GLOBAL_STEP: 4325[0m
+     | > loss: 0.24863  (0.25808)
+     | > log_mle: -0.37777  (-0.36921)
+     | > loss_dur: 0.62640  (0.62729)
+     | > grad_norm: 3.97311  (5.63178)
+     | > current_lr: 0.00096 
+     | > step_time: 0.83660  (0.82150)
+     | > loader_time: 0.01830  (0.03492)
+
+
+[1m   --> STEP: 290/405 -- GLOBAL_STEP: 4350[0m
+     | > loss: 0.22918  (0.25670)
+     | > log_mle: -0.38280  (-0.37065)
+     | > loss_dur: 0.61198  (0.62734)
+     | > grad_norm: 3.70530  (5.69032)
+     | > current_lr: 0.00096 
+     | > step_time: 0.72430  (0.84527)
+     | > loader_time: 0.01800  (0.03541)
+
+
+[1m   --> STEP: 315/405 -- GLOBAL_STEP: 4375[0m
+     | > loss: 0.25454  (0.25591)
+     | > log_mle: -0.38686  (-0.37190)
+     | > loss_dur: 0.64139  (0.62781)
+     | > grad_norm: 3.62603  (5.68973)
+     | > current_lr: 0.00096 
+     | > step_time: 1.18790  (0.86312)
+     | > loader_time: 0.05360  (0.03526)
+
+
+[1m   --> STEP: 340/405 -- GLOBAL_STEP: 4400[0m
+     | > loss: 0.22420  (0.25461)
+     | > log_mle: -0.38608  (-0.37282)
+     | > loss_dur: 0.61028  (0.62743)
+     | > grad_norm: 3.57757  (5.71675)
+     | > current_lr: 0.00095 
+     | > step_time: 0.53940  (0.88031)
+     | > loader_time: 0.01340  (0.03496)
+
+
+[1m   --> STEP: 365/405 -- GLOBAL_STEP: 4425[0m
+     | > loss: 0.22722  (0.25275)
+     | > log_mle: -0.39366  (-0.37363)
+     | > loss_dur: 0.62088  (0.62639)
+     | > grad_norm: 3.53590  (5.69921)
+     | > current_lr: 0.00095 
+     | > step_time: 1.32330  (0.89516)
+     | > loader_time: 0.01650  (0.03510)
+
+
+[1m   --> STEP: 390/405 -- GLOBAL_STEP: 4450[0m
+     | > loss: 0.19969  (0.25040)
+     | > log_mle: -0.38808  (-0.37436)
+     | > loss_dur: 0.58777  (0.62475)
+     | > grad_norm: 2.81555  (5.61498)
+     | > current_lr: 0.00095 
+     | > step_time: 1.31200  (0.90351)
+     | > loader_time: 0.03760  (0.03515)
+
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 131
+ | > Max length sequence: 174
+ | > Min length sequence: 20
+ | > Avg length sequence: 100.76335877862596
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > EVALUATION [0m
+
+ | > Synthesizing test sentences.
+
+  [1m--> EVAL PERFORMANCE[0m
+     | > avg_loader_time:[91m 0.04185 [0m(+0.02832)
+     | > avg_loss:[92m 0.24235 [0m(-0.03390)
+     | > avg_log_mle:[92m -0.39565 [0m(-0.02218)
+     | > avg_loss_dur:[92m 0.63800 [0m(-0.01173)
+
+ > BEST MODEL : /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26/best_model_4466.pth.tar
+
+[4m[1m > EPOCH: 11/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 17:49:22) [0m
+
+[1m   --> STEP: 9/405 -- GLOBAL_STEP: 4475[0m
+     | > loss: 0.23621  (0.25537)
+     | > log_mle: -0.35700  (-0.37237)
+     | > loss_dur: 0.59321  (0.62775)
+     | > grad_norm: 2.22822  (3.88895)
+     | > current_lr: 0.00095 
+     | > step_time: 0.57050  (0.71099)
+     | > loader_time: 0.01290  (0.01312)
+
+
+[1m   --> STEP: 34/405 -- GLOBAL_STEP: 4500[0m
+     | > loss: 0.23314  (0.25685)
+     | > log_mle: -0.35757  (-0.36279)
+     | > loss_dur: 0.59071  (0.61964)
+     | > grad_norm: 6.61311  (4.65744)
+     | > current_lr: 0.00094 
+     | > step_time: 0.61140  (0.62906)
+     | > loader_time: 0.01000  (0.02040)
+
+
+[1m   --> STEP: 59/405 -- GLOBAL_STEP: 4525[0m
+     | > loss: 0.23692  (0.25192)
+     | > log_mle: -0.36693  (-0.36628)
+     | > loss_dur: 0.60385  (0.61820)
+     | > grad_norm: 6.73288  (5.12692)
+     | > current_lr: 0.00094 
+     | > step_time: 0.48510  (0.65479)
+     | > loader_time: 0.01500  (0.01858)
+
+
+[1m   --> STEP: 84/405 -- GLOBAL_STEP: 4550[0m
+     | > loss: 0.22345  (0.24996)
+     | > log_mle: -0.38232  (-0.36988)
+     | > loss_dur: 0.60577  (0.61985)
+     | > grad_norm: 3.92693  (5.51325)
+     | > current_lr: 0.00094 
+     | > step_time: 1.44900  (0.70537)
+     | > loader_time: 0.02930  (0.02057)
+
+
+[1m   --> STEP: 109/405 -- GLOBAL_STEP: 4575[0m
+     | > loss: 0.25215  (0.24797)
+     | > log_mle: -0.38019  (-0.37287)
+     | > loss_dur: 0.63234  (0.62084)
+     | > grad_norm: 8.27983  (5.52873)
+     | > current_lr: 0.00094 
+     | > step_time: 0.50130  (0.73870)
+     | > loader_time: 0.01280  (0.02150)
+
+
+[1m   --> STEP: 134/405 -- GLOBAL_STEP: 4600[0m
+     | > loss: 0.21386  (0.24543)
+     | > log_mle: -0.39096  (-0.37576)
+     | > loss_dur: 0.60482  (0.62119)
+     | > grad_norm: 6.65941  (5.61196)
+     | > current_lr: 0.00093 
+     | > step_time: 0.77910  (0.76466)
+     | > loader_time: 0.05820  (0.02290)
+
+
+[1m   --> STEP: 159/405 -- GLOBAL_STEP: 4625[0m
+     | > loss: 0.25089  (0.24437)
+     | > log_mle: -0.39399  (-0.37742)
+     | > loss_dur: 0.64488  (0.62179)
+     | > grad_norm: 6.27427  (5.88696)
+     | > current_lr: 0.00093 
+     | > step_time: 0.44800  (0.77813)
+     | > loader_time: 0.01290  (0.02357)
+
+
+[1m   --> STEP: 184/405 -- GLOBAL_STEP: 4650[0m
+     | > loss: 0.21036  (0.24137)
+     | > log_mle: -0.40855  (-0.37963)
+     | > loss_dur: 0.61891  (0.62100)
+     | > grad_norm: 4.72842  (5.90211)
+     | > current_lr: 0.00093 
+     | > step_time: 0.75010  (0.78928)
+     | > loader_time: 0.05000  (0.02390)
+
+
+[1m   --> STEP: 209/405 -- GLOBAL_STEP: 4675[0m
+     | > loss: 0.24005  (0.24100)
+     | > log_mle: -0.39150  (-0.38161)
+     | > loss_dur: 0.63155  (0.62261)
+     | > grad_norm: 11.19977  (6.02736)
+     | > current_lr: 0.00093 
+     | > step_time: 0.44090  (0.80817)
+     | > loader_time: 0.02200  (0.02507)
+
+
+[1m   --> STEP: 234/405 -- GLOBAL_STEP: 4700[0m
+     | > loss: 0.22353  (0.24060)
+     | > log_mle: -0.40692  (-0.38270)
+     | > loss_dur: 0.63045  (0.62330)
+     | > grad_norm: 5.00911  (6.11904)
+     | > current_lr: 0.00092 
+     | > step_time: 0.67730  (0.82391)
+     | > loader_time: 0.01610  (0.02564)
+
+
+[1m   --> STEP: 259/405 -- GLOBAL_STEP: 4725[0m
+     | > loss: 0.22934  (0.24023)
+     | > log_mle: -0.39782  (-0.38410)
+     | > loss_dur: 0.62716  (0.62433)
+     | > grad_norm: 3.68088  (6.18703)
+     | > current_lr: 0.00092 
+     | > step_time: 1.10250  (0.84775)
+     | > loader_time: 0.02580  (0.02644)
+
+
+[1m   --> STEP: 284/405 -- GLOBAL_STEP: 4750[0m
+     | > loss: 0.26827  (0.24014)
+     | > log_mle: -0.38361  (-0.38503)
+     | > loss_dur: 0.65188  (0.62516)
+     | > grad_norm: 5.42590  (6.32692)
+     | > current_lr: 0.00092 
+     | > step_time: 0.93450  (0.86567)
+     | > loader_time: 0.02600  (0.02704)
+
+
+[1m   --> STEP: 309/405 -- GLOBAL_STEP: 4775[0m
+     | > loss: 0.22192  (0.23995)
+     | > log_mle: -0.39788  (-0.38611)
+     | > loss_dur: 0.61980  (0.62606)
+     | > grad_norm: 3.19288  (6.26334)
+     | > current_lr: 0.00092 
+     | > step_time: 1.55860  (0.88290)
+     | > loader_time: 0.03710  (0.02728)
+
+
+[1m   --> STEP: 334/405 -- GLOBAL_STEP: 4800[0m
+     | > loss: 0.21325  (0.23883)
+     | > log_mle: -0.39729  (-0.38709)
+     | > loss_dur: 0.61053  (0.62592)
+     | > grad_norm: 6.66194  (6.37485)
+     | > current_lr: 0.00091 
+     | > step_time: 1.64170  (0.90012)
+     | > loader_time: 0.03420  (0.02776)
+
+
+[1m   --> STEP: 359/405 -- GLOBAL_STEP: 4825[0m
+     | > loss: 0.21488  (0.23723)
+     | > log_mle: -0.39781  (-0.38825)
+     | > loss_dur: 0.61269  (0.62548)
+     | > grad_norm: 14.61413  (6.38935)
+     | > current_lr: 0.00091 
+     | > step_time: 0.51570  (0.91626)
+     | > loader_time: 0.01560  (0.02884)
+
+
+[1m   --> STEP: 384/405 -- GLOBAL_STEP: 4850[0m
+     | > loss: 0.22767  (0.23592)
+     | > log_mle: -0.39073  (-0.38851)
+     | > loss_dur: 0.61840  (0.62443)
+     | > grad_norm: 7.01929  (6.52914)
+     | > current_lr: 0.00091 
+     | > step_time: 1.11070  (0.93697)
+     | > loader_time: 0.02700  (0.02972)
+
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 131
+ | > Max length sequence: 174
+ | > Min length sequence: 20
+ | > Avg length sequence: 100.76335877862596
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > EVALUATION [0m
+
+ | > Synthesizing test sentences.
+
+  [1m--> EVAL PERFORMANCE[0m
+     | > avg_loader_time:[92m 0.02139 [0m(-0.02047)
+     | > avg_loss:[92m 0.19288 [0m(-0.04948)
+     | > avg_log_mle:[92m -0.41918 [0m(-0.02353)
+     | > avg_loss_dur:[92m 0.61205 [0m(-0.02595)
+
+ > BEST MODEL : /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26/best_model_4872.pth.tar
+
+[4m[1m > EPOCH: 12/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 17:56:19) [0m
+
+[1m   --> STEP: 3/405 -- GLOBAL_STEP: 4875[0m
+     | > loss: 0.24687  (0.23400)
+     | > log_mle: -0.37585  (-0.38640)
+     | > loss_dur: 0.62273  (0.62040)
+     | > grad_norm: 7.44741  (9.46654)
+     | > current_lr: 0.00091 
+     | > step_time: 0.35260  (0.52356)
+     | > loader_time: 0.01670  (0.01398)
+
+
+[1m   --> STEP: 28/405 -- GLOBAL_STEP: 4900[0m
+     | > loss: 0.22863  (0.24640)
+     | > log_mle: -0.39122  (-0.38289)
+     | > loss_dur: 0.61985  (0.62928)
+     | > grad_norm: 7.13994  (6.05644)
+     | > current_lr: 0.00090 
+     | > step_time: 0.82630  (0.62130)
+     | > loader_time: 0.01220  (0.01679)
+
+
+[1m   --> STEP: 53/405 -- GLOBAL_STEP: 4925[0m
+     | > loss: 0.23143  (0.24217)
+     | > log_mle: -0.38784  (-0.38061)
+     | > loss_dur: 0.61928  (0.62278)
+     | > grad_norm: 6.30290  (5.82112)
+     | > current_lr: 0.00090 
+     | > step_time: 0.91200  (0.66318)
+     | > loader_time: 0.02190  (0.01827)
+
+
+[1m   --> STEP: 78/405 -- GLOBAL_STEP: 4950[0m
+     | > loss: 0.21247  (0.23926)
+     | > log_mle: -0.38621  (-0.38397)
+     | > loss_dur: 0.59867  (0.62323)
+     | > grad_norm: 6.13574  (5.98738)
+     | > current_lr: 0.00090 
+     | > step_time: 0.94870  (0.71904)
+     | > loader_time: 0.02800  (0.01933)
+
+
+[1m   --> STEP: 103/405 -- GLOBAL_STEP: 4975[0m
+     | > loss: 0.23120  (0.23689)
+     | > log_mle: -0.39074  (-0.38758)
+     | > loss_dur: 0.62194  (0.62447)
+     | > grad_norm: 5.16171  (6.01250)
+     | > current_lr: 0.00090 
+     | > step_time: 1.04820  (0.75415)
+     | > loader_time: 0.01470  (0.02056)
+
+
+[1m   --> STEP: 128/405 -- GLOBAL_STEP: 5000[0m
+     | > loss: 0.20532  (0.23545)
+     | > log_mle: -0.40601  (-0.38947)
+     | > loss_dur: 0.61133  (0.62493)
+     | > grad_norm: 6.04898  (6.34860)
+     | > current_lr: 0.00090 
+     | > step_time: 0.86090  (0.79340)
+     | > loader_time: 0.01600  (0.02206)
+
+
+[1m   --> STEP: 153/405 -- GLOBAL_STEP: 5025[0m
+     | > loss: 0.25918  (0.23399)
+     | > log_mle: -0.39633  (-0.39109)
+     | > loss_dur: 0.65550  (0.62508)
+     | > grad_norm: 4.41182  (6.42311)
+     | > current_lr: 0.00089 
+     | > step_time: 0.91960  (0.80234)
+     | > loader_time: 0.03680  (0.02218)
+
+
+[1m   --> STEP: 178/405 -- GLOBAL_STEP: 5050[0m
+     | > loss: 0.25494  (0.23280)
+     | > log_mle: -0.38691  (-0.39221)
+     | > loss_dur: 0.64186  (0.62501)
+     | > grad_norm: 6.00437  (6.45686)
+     | > current_lr: 0.00089 
+     | > step_time: 1.08720  (0.82098)
+     | > loader_time: 0.05610  (0.02354)
+
+
+[1m   --> STEP: 203/405 -- GLOBAL_STEP: 5075[0m
+     | > loss: 0.27524  (0.23278)
+     | > log_mle: -0.39743  (-0.39371)
+     | > loss_dur: 0.67267  (0.62649)
+     | > grad_norm: 8.01248  (6.63013)
+     | > current_lr: 0.00089 
+     | > step_time: 1.02330  (0.84260)
+     | > loader_time: 0.03940  (0.02462)
+
+
+[1m   --> STEP: 228/405 -- GLOBAL_STEP: 5100[0m
+     | > loss: 0.21713  (0.23289)
+     | > log_mle: -0.39928  (-0.39435)
+     | > loss_dur: 0.61642  (0.62724)
+     | > grad_norm: 8.65354  (6.60270)
+     | > current_lr: 0.00089 
+     | > step_time: 1.20210  (0.85198)
+     | > loader_time: 0.01380  (0.02562)
+
+
+[1m   --> STEP: 253/405 -- GLOBAL_STEP: 5125[0m
+     | > loss: 0.22679  (0.23231)
+     | > log_mle: -0.40636  (-0.39585)
+     | > loss_dur: 0.63315  (0.62815)
+     | > grad_norm: 7.41155  (6.76097)
+     | > current_lr: 0.00088 
+     | > step_time: 1.65260  (0.86781)
+     | > loader_time: 0.03370  (0.02632)
+
+
+[1m   --> STEP: 278/405 -- GLOBAL_STEP: 5150[0m
+     | > loss: 0.21786  (0.23176)
+     | > log_mle: -0.40523  (-0.39695)
+     | > loss_dur: 0.62309  (0.62871)
+     | > grad_norm: 11.67252  (6.80263)
+     | > current_lr: 0.00088 
+     | > step_time: 0.84300  (0.86534)
+     | > loader_time: 0.01720  (0.02628)
+
+
+[1m   --> STEP: 303/405 -- GLOBAL_STEP: 5175[0m
+     | > loss: 0.22450  (0.23116)
+     | > log_mle: -0.40809  (-0.39774)
+     | > loss_dur: 0.63258  (0.62891)
+     | > grad_norm: 3.65551  (6.81898)
+     | > current_lr: 0.00088 
+     | > step_time: 0.73080  (0.88490)
+     | > loader_time: 0.01650  (0.02726)
+
+
+[1m   --> STEP: 328/405 -- GLOBAL_STEP: 5200[0m
+     | > loss: 0.22053  (0.22975)
+     | > log_mle: -0.42754  (-0.39880)
+     | > loss_dur: 0.64807  (0.62855)
+     | > grad_norm: 5.62520  (6.89278)
+     | > current_lr: 0.00088 
+     | > step_time: 0.99510  (0.90348)
+     | > loader_time: 0.05640  (0.02856)
+
+
+[1m   --> STEP: 353/405 -- GLOBAL_STEP: 5225[0m
+     | > loss: 0.19309  (0.22833)
+     | > log_mle: -0.42366  (-0.39965)
+     | > loss_dur: 0.61674  (0.62799)
+     | > grad_norm: 2.49658  (6.88887)
+     | > current_lr: 0.00088 
+     | > step_time: 1.05770  (0.91123)
+     | > loader_time: 0.03050  (0.02907)
+
+
+[1m   --> STEP: 378/405 -- GLOBAL_STEP: 5250[0m
+     | > loss: 0.18975  (0.22648)
+     | > log_mle: -0.41571  (-0.40041)
+     | > loss_dur: 0.60547  (0.62689)
+     | > grad_norm: 9.85332  (6.95860)
+     | > current_lr: 0.00087 
+     | > step_time: 1.18270  (0.93004)
+     | > loader_time: 0.04050  (0.03000)
+
+
+[1m   --> STEP: 403/405 -- GLOBAL_STEP: 5275[0m
+     | > loss: 0.14833  (0.22417)
+     | > log_mle: -0.41968  (-0.40063)
+     | > loss_dur: 0.56802  (0.62479)
+     | > grad_norm: 1.65306  (6.93595)
+     | > current_lr: 0.00087 
+     | > step_time: 0.37490  (0.93781)
+     | > loader_time: 0.01490  (0.03069)
+
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 131
+ | > Max length sequence: 174
+ | > Min length sequence: 20
+ | > Avg length sequence: 100.76335877862596
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > EVALUATION [0m
+
+ | > Synthesizing test sentences.
+
+  [1m--> EVAL PERFORMANCE[0m
+     | > avg_loader_time:[92m 0.01955 [0m(-0.00184)
+     | > avg_loss:[91m 0.20764 [0m(+0.01477)
+     | > avg_log_mle:[91m -0.41650 [0m(+0.00268)
+     | > avg_loss_dur:[91m 0.62414 [0m(+0.01209)
+
+
+[4m[1m > EPOCH: 13/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 18:03:19) [0m
+
+[1m   --> STEP: 22/405 -- GLOBAL_STEP: 5300[0m
+     | > loss: 0.19708  (0.24946)
+     | > log_mle: -0.38028  (-0.38041)
+     | > loss_dur: 0.57736  (0.62987)
+     | > grad_norm: 6.34903  (6.47330)
+     | > current_lr: 0.00087 
+     | > step_time: 1.12830  (0.71032)
+     | > loader_time: 0.04330  (0.01493)
+
+
+[1m   --> STEP: 47/405 -- GLOBAL_STEP: 5325[0m
+     | > loss: 0.24827  (0.24078)
+     | > log_mle: -0.38992  (-0.38125)
+     | > loss_dur: 0.63819  (0.62203)
+     | > grad_norm: 2.42649  (6.16736)
+     | > current_lr: 0.00087 
+     | > step_time: 0.99540  (0.74043)
+     | > loader_time: 0.02170  (0.01741)
+
+
+[1m   --> STEP: 72/405 -- GLOBAL_STEP: 5350[0m
+     | > loss: 0.20465  (0.23236)
+     | > log_mle: -0.40025  (-0.38785)
+     | > loss_dur: 0.60490  (0.62021)
+     | > grad_norm: 8.28847  (6.55882)
+     | > current_lr: 0.00087 
+     | > step_time: 1.27620  (0.76822)
+     | > loader_time: 0.02230  (0.01932)
+
+
+[1m   --> STEP: 97/405 -- GLOBAL_STEP: 5375[0m
+     | > loss: 0.20098  (0.23067)
+     | > log_mle: -0.41773  (-0.39245)
+     | > loss_dur: 0.61871  (0.62311)
+     | > grad_norm: 10.40528  (6.75520)
+     | > current_lr: 0.00086 
+     | > step_time: 1.14330  (0.79939)
+     | > loader_time: 0.10390  (0.02093)
+
+
+[1m   --> STEP: 122/405 -- GLOBAL_STEP: 5400[0m
+     | > loss: 0.25206  (0.22978)
+     | > log_mle: -0.41497  (-0.39460)
+     | > loss_dur: 0.66703  (0.62438)
+     | > grad_norm: 5.42021  (6.72958)
+     | > current_lr: 0.00086 
+     | > step_time: 0.78730  (0.83540)
+     | > loader_time: 0.05270  (0.02218)
+
+
+[1m   --> STEP: 147/405 -- GLOBAL_STEP: 5425[0m
+     | > loss: 0.22397  (0.22907)
+     | > log_mle: -0.41463  (-0.39631)
+     | > loss_dur: 0.63860  (0.62538)
+     | > grad_norm: 8.66003  (7.01252)
+     | > current_lr: 0.00086 
+     | > step_time: 1.24010  (0.86227)
+     | > loader_time: 0.02360  (0.02316)
+
+
+[1m   --> STEP: 172/405 -- GLOBAL_STEP: 5450[0m
+     | > loss: 0.21267  (0.22665)
+     | > log_mle: -0.42911  (-0.39834)
+     | > loss_dur: 0.64179  (0.62499)
+     | > grad_norm: 6.41486  (6.97772)
+     | > current_lr: 0.00086 
+     | > step_time: 0.99430  (0.88608)
+     | > loader_time: 0.04990  (0.02388)
+
+
+[1m   --> STEP: 197/405 -- GLOBAL_STEP: 5475[0m
+     | > loss: 0.20753  (0.22519)
+     | > log_mle: -0.42295  (-0.40080)
+     | > loss_dur: 0.63048  (0.62600)
+     | > grad_norm: 13.85835  (7.19619)
+     | > current_lr: 0.00086 
+     | > step_time: 0.70620  (0.90478)
+     | > loader_time: 0.01290  (0.02592)
+
+
+[1m   --> STEP: 222/405 -- GLOBAL_STEP: 5500[0m
+     | > loss: 0.21945  (0.22434)
+     | > log_mle: -0.40895  (-0.40228)
+     | > loss_dur: 0.62839  (0.62662)
+     | > grad_norm: 9.26045  (7.29669)
+     | > current_lr: 0.00085 
+     | > step_time: 1.19210  (0.92027)
+     | > loader_time: 0.02760  (0.02745)
+
+
+[1m   --> STEP: 247/405 -- GLOBAL_STEP: 5525[0m
+     | > loss: 0.21741  (0.22424)
+     | > log_mle: -0.41295  (-0.40334)
+     | > loss_dur: 0.63037  (0.62758)
+     | > grad_norm: 3.95298  (7.27532)
+     | > current_lr: 0.00085 
+     | > step_time: 1.52140  (0.94083)
+     | > loader_time: 0.02690  (0.02834)
+
+
+[1m   --> STEP: 272/405 -- GLOBAL_STEP: 5550[0m
+     | > loss: 0.22055  (0.22393)
+     | > log_mle: -0.41685  (-0.40412)
+     | > loss_dur: 0.63740  (0.62805)
+     | > grad_norm: 3.65725  (7.37756)
+     | > current_lr: 0.00085 
+     | > step_time: 0.61080  (0.94293)
+     | > loader_time: 0.01850  (0.02842)
+
+
+[1m   --> STEP: 297/405 -- GLOBAL_STEP: 5575[0m
+     | > loss: 0.19420  (0.22358)
+     | > log_mle: -0.42898  (-0.40519)
+     | > loss_dur: 0.62318  (0.62876)
+     | > grad_norm: 5.48419  (7.43972)
+     | > current_lr: 0.00085 
+     | > step_time: 1.30140  (0.95466)
+     | > loader_time: 0.03030  (0.02922)
+
+
+[1m   --> STEP: 322/405 -- GLOBAL_STEP: 5600[0m
+     | > loss: 0.20263  (0.22279)
+     | > log_mle: -0.40799  (-0.40619)
+     | > loss_dur: 0.61062  (0.62899)
+     | > grad_norm: 9.33668  (7.48827)
+     | > current_lr: 0.00085 
+     | > step_time: 1.61150  (0.98063)
+     | > loader_time: 0.01900  (0.03065)
+
+
+[1m   --> STEP: 347/405 -- GLOBAL_STEP: 5625[0m
+     | > loss: 0.19630  (0.22178)
+     | > log_mle: -0.41125  (-0.40709)
+     | > loss_dur: 0.60755  (0.62887)
+     | > grad_norm: 6.74987  (7.51307)
+     | > current_lr: 0.00084 
+     | > step_time: 0.96100  (0.99811)
+     | > loader_time: 0.02390  (0.03122)
+
+
+[1m   --> STEP: 372/405 -- GLOBAL_STEP: 5650[0m
+     | > loss: 0.19959  (0.22000)
+     | > log_mle: -0.42716  (-0.40796)
+     | > loss_dur: 0.62675  (0.62796)
+     | > grad_norm: 6.93746  (7.47608)
+     | > current_lr: 0.00084 
+     | > step_time: 1.58710  (1.01708)
+     | > loader_time: 0.04760  (0.03220)
+
+
+[1m   --> STEP: 397/405 -- GLOBAL_STEP: 5675[0m
+     | > loss: 0.18546  (0.21816)
+     | > log_mle: -0.40085  (-0.40800)
+     | > loss_dur: 0.58632  (0.62616)
+     | > grad_norm: 5.68865  (7.60835)
+     | > current_lr: 0.00084 
+     | > step_time: 0.81570  (1.02624)
+     | > loader_time: 0.02060  (0.03256)
+
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 131
+ | > Max length sequence: 174
+ | > Min length sequence: 20
+ | > Avg length sequence: 100.76335877862596
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > EVALUATION [0m
+
+warning: audio amplitude out of range, auto clipped.
+ | > Synthesizing test sentences.
+warning: audio amplitude out of range, auto clipped.
+warning: audio amplitude out of range, auto clipped.
+
+  [1m--> EVAL PERFORMANCE[0m
+     | > avg_loader_time:[91m 0.02164 [0m(+0.00209)
+     | > avg_loss:[91m 0.21014 [0m(+0.00250)
+     | > avg_log_mle:[92m -0.43319 [0m(-0.01670)
+     | > avg_loss_dur:[91m 0.64333 [0m(+0.01919)
+
+
+[4m[1m > EPOCH: 14/100[0m
+ --> /home/centos/qalab_TTS/TTS/recipes/ljspeech/glow_tts/coqui_tts-September-29-2021_04+18PM-7f388f26
+
+ > DataLoader initialization
+ | > Use phonemes: True
+   | > phoneme language: en-us
+ | > Number of instances : 12969
+ | > Max length sequence: 188
+ | > Min length sequence: 13
+ | > Avg length sequence: 100.90014650319993
+ | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+ | > Batch group size: 0.
+
+[1m > TRAINING (2021-09-29 18:10:51) [0m
+
+[1m   --> STEP: 16/405 -- GLOBAL_STEP: 5700[0m
+     | > loss: 0.25829  (0.24206)
+     | > log_mle: -0.38596  (-0.39343)
+     | > loss_dur: 0.64425  (0.63550)
+     | > grad_norm: 7.42963  (9.29375)
+     | > current_lr: 0.00084 
+     | > step_time: 0.51530  (0.67135)
+     | > loader_time: 0.01210  (0.01905)
+
+
+[1m   --> STEP: 41/405 -- GLOBAL_STEP: 5725[0m
+     | > loss: 0.20414  (0.23041)
+     | > log_mle: -0.37938  (-0.39593)
+     | > loss_dur: 0.58352  (0.62634)
+     | > grad_norm: 5.69276  (7.33264)
+     | > current_lr: 0.00084 
+     | > step_time: 0.89770  (0.70612)
+     | > loader_time: 0.01220  (0.01786)
+
+
+[1m   --> STEP: 66/405 -- GLOBAL_STEP: 5750[0m
+     | > loss: 0.24645  (0.22624)
+     | > log_mle: -0.42140  (-0.39867)
+     | > loss_dur: 0.66785  (0.62492)
+     | > grad_norm: 13.94023  (7.67141)
+     | > current_lr: 0.00084 
+     | > step_time: 0.80150  (0.74533)
+     | > loader_time: 0.02170  (0.01945)
+
+
+[1m   --> STEP: 91/405 -- GLOBAL_STEP: 5775[0m
+     | > loss: 0.17956  (0.22229)
+     | > log_mle: -0.41894  (-0.40252)
+     | > loss_dur: 0.59850  (0.62481)
+     | > grad_norm: 6.65721  (7.46489)
+     | > current_lr: 0.00083 
+     | > step_time: 0.50490  (0.76927)
+     | > loader_time: 0.01240  (0.01999)
+
+
+[1m   --> STEP: 116/405 -- GLOBAL_STEP: 5800[0m
+     | > loss: 0.19473  (0.21989)
+     | > log_mle: -0.41760  (-0.40538)
+     | > loss_dur: 0.61234  (0.62527)
+     | > grad_norm: 5.48459  (7.62597)
+     | > current_lr: 0.00083 
+     | > step_time: 1.05480  (0.80807)
+     | > loader_time: 0.01910  (0.02052)
+
+
+[1m   --> STEP: 141/405 -- GLOBAL_STEP: 5825[0m
+     | > loss: 0.19980  (0.21842)
+     | > log_mle: -0.42354  (-0.40653)
+     | > loss_dur: 0.62334  (0.62495)
+     | > grad_norm: 6.97250  (7.69798)
+     | > current_lr: 0.00083 
+     | > step_time: 0.83800  (0.82892)
+     | > loader_time: 0.01210  (0.02094)
+
+
+[1m   --> STEP: 166/405 -- GLOBAL_STEP: 5850[0m
+     | > loss: 0.19873  (0.21626)
+     | > log_mle: -0.42634  (-0.40834)
+     | > loss_dur: 0.62507  (0.62460)
+     | > grad_norm: 7.93837  (7.67898)
+     | > current_lr: 0.00083 
+     | > step_time: 1.02890  (0.84947)
+     | > loader_time: 0.03140  (0.02209)
+
+
+[1m   --> STEP: 191/405 -- GLOBAL_STEP: 5875[0m
+     | > loss: 0.20262  (0.21507)
+     | > log_mle: -0.42000  (-0.41010)
+     | > loss_dur: 0.62261  (0.62517)
+     | > grad_norm: 18.08936  (7.72172)
+     | > current_lr: 0.00083 
+     | > step_time: 0.61620  (0.86908)
+     | > loader_time: 0.01710  (0.02333)
+
+
+[1m   --> STEP: 216/405 -- GLOBAL_STEP: 5900[0m
+     | > loss: 0.21743  (0.21501)
+     | > log_mle: -0.42588  (-0.41111)
+     | > loss_dur: 0.64331  (0.62612)
+     | > grad_norm: 11.48737  (7.81288)
+     | > current_lr: 0.00082 
+     | > step_time: 0.76820  (0.90079)
+     | > loader_time: 0.03820  (0.02459)
+
+
+[1m   --> STEP: 241/405 -- GLOBAL_STEP: 5925[0m
+     | > loss: 0.22479  (0.21517)
+     | > log_mle: -0.40947  (-0.41183)
+     | > loss_dur: 0.63426  (0.62700)
+     | > grad_norm: 13.38785  (7.99547)
+     | > current_lr: 0.00082 
+     | > step_time: 0.58770  (0.90755)
+     | > loader_time: 0.02570  (0.02543)
+
